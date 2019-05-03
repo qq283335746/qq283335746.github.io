@@ -1,3 +1,5 @@
 yibi.chen's official website:
 
-ionic build --prod -- --base-href https://qq283335746.github.io/Yibi/
+https://pages.github.com/
+ionic build --prod -- --base-href https://Yibaychen.github.io/Yibi/
+npx angular-cli-ghpages --branch=master --dir=www

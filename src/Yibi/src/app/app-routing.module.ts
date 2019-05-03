@@ -14,7 +14,8 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  }
+  },
+  { path: 'dynamic-nav', loadChildren: './dynamic-nav/dynamic-nav.module#DynamicNavPageModule' }
 ];
 
 @NgModule({
