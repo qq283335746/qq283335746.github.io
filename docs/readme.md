@@ -77,4 +77,25 @@ apollo-1.3.0/apollo-portal/target/apollo-portal-1.3.0-github.zip =》 /Publish/C
 解压缩上述三个xxx-1.3.0-github.zip文件，并分别打开scripts/startup.sh，修改LOG_DIR=//Publish/CtripcorpApollo/Logs
 运行scripts/startup.sh即可。
 
+.Net开发之NuGet
+在解决方案，打开编辑.csproj文件：
+<PropertyGroup>
+    <Version>1.0.0</Version>
+    <Authors>yibi chen</Authors>
+    <Company>yibi chen</Company>
+    <Description>your project descr</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <IncludeSymbols>true</IncludeSymbols>
+    <EmbedAllSources>true</EmbedAllSources>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+</PropertyGroup>
+
+<script type="text/javascript">
+    window.location.href = "Home.html";
+</script>
+
+
+
 
