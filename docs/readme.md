@@ -10,8 +10,12 @@ https://computingforgeeks.com/how-to-install-consul-cluster-18-04-lts/
 示例源码：
 https://github.com/qq283335746/Yibi/tree/master/Src/Yibi/Consul
 
-<a href="Consul.html">
 分布式架构之Consul
-实录篇：分布式架构中，使用Consul作为服务注册与发现。
-</a>
+实践篇：分布式架构中，使用Consul作为服务注册与发现。
+
+分布式架构之Eureka
+实践篇：分布式架构中，使用Eureka作为服务注册与发现。
+示例源码：
+https://github.com/qq283335746/Yibi/tree/master/Src/Yibi/Eureka
+
 
