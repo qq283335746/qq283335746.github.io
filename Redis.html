@@ -1,0 +1,409 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta
+      charset="UTF-8" />
+    <title>Yibi Chen 分布式架构之Redis</title>
+    <meta
+      name="Generator"
+      content="PowerTools for Open XML" />
+    <style>span { white-space: pre-wrap; }
+h1.pt-a3 {
+    margin-top: 12pt;
+    margin-bottom: 3pt;
+    text-align: center;
+    font-family: 宋体;
+    font-size: 16pt;
+    line-height: 108%;
+    margin-left: 0;
+    margin-right: 0;
+}
+span.pt-a0 {
+    font-family: 宋体;
+    font-size: 16pt;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+p.pt-a {
+    text-align: justify;
+    font-family: Calibri;
+    font-size: 10.5pt;
+    line-height: 108%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: .001pt;
+}
+span.pt-000000 {
+    font-size: 10.5pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+p.pt-a-000001 {
+    text-align: justify;
+    font-family: Calibri;
+    font-size: 14pt;
+    line-height: 108%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: .001pt;
+}
+span.pt-a5 {
+    color: #0000FF;
+    font-family: Calibri;
+    font-size: 14pt;
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+p.pt-a-000002 {
+    line-height: 14.3pt;
+    text-align: left;
+    background: #1E1E1E;
+    font-family: Consolas;
+    font-size: 10.5pt;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: .001pt;
+}
+span.pt-000003 {
+    color: #D4D4D4;
+    font-size: 10.5pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+span.pt-a0-000004 {
+    color: #D4D4D4;
+    font-family: Consolas;
+    font-size: 10.5pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+p.pt-000005 {
+    margin-left: 0.29in;
+    text-indent: -0.29in;
+    text-align: justify;
+    font-family: Calibri;
+    font-size: 14pt;
+    line-height: 108%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: .001pt;
+}
+span.pt-000006 {
+    font-family: Calibri;
+    font-size: 14pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-indent: 0;
+    width: 0.292in;
+}
+span.pt-a0-000007 {
+    font-family: Calibri;
+    font-size: 14pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+p.pt-a-000008 {
+    line-height: 14.3pt;
+    text-align: left;
+    background: #1E1E1E;
+    font-family: 宋体;
+    font-size: 10.5pt;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: .001pt;
+}
+span.pt-a0-000009 {
+    color: #D4D4D4;
+    font-family: 宋体;
+    font-size: 10.5pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+</style>
+  </head>
+  <body>
+    <div>
+      <h1
+        dir="ltr"
+        class="pt-a3">
+        <span
+          lang="zh-CN"
+          class="pt-a0">分布式架构之Redis</span>
+      </h1>
+      <p
+        dir="ltr"
+        class="pt-a">
+        <span
+          xml:space="preserve"
+          class="pt-000000"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000001">
+        <a
+          href="https://github.com/qq283335746/Yibi/tree/master/Src/Yibi/Redis">
+          <span
+            lang="zh-CN"
+            class="pt-a5">示例源码</span>
+        </a>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          xml:space="preserve"
+          class="pt-000003"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          class="pt-a0-000004">https://github.com/qq283335746/Yibi/tree/master/Src/Yibi/</span>
+        <span
+          class="pt-a0-000004">Redis</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          xml:space="preserve"
+          class="pt-000003"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a">
+        <span
+          xml:space="preserve"
+          class="pt-000000"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-000005">
+        <span
+          lang="zh-CN"
+          class="pt-000006">1、</span>
+        <span
+          lang="zh-CN"
+          class="pt-a0-000007">环境搭建</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          xml:space="preserve"
+          class="pt-000003"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000008">
+        <span
+          lang="zh-CN"
+          class="pt-a0-000009">当前使用系统：Ubuntu18.04</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000008">
+        <span
+          lang="zh-CN"
+          class="pt-a0-000009">安装与配置：</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          xml:space="preserve"
+          class="pt-000003"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          class="pt-a0-000004">How To Install and Secure Redis on Ubuntu 18.04</span>
+        <span
+          class="pt-a0-000004">:</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          class="pt-a0-000004">https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-18-04</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          xml:space="preserve"
+          class="pt-000003"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          class="pt-a0-000004">How to Install Redis on Ubuntu 18.04 &amp; 16.04 LTS</span>
+        <span
+          class="pt-a0-000004">:</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          class="pt-a0-000004">https://tecadmin.net/install-redis-ubuntu/</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          xml:space="preserve"
+          class="pt-000003"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a">
+        <span
+          xml:space="preserve"
+          class="pt-000000"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-000005">
+        <span
+          lang="zh-CN"
+          class="pt-000006">2、</span>
+        <span
+          lang="zh-CN"
+          class="pt-a0-000007">相关工具</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          xml:space="preserve"
+          class="pt-000003"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          class="pt-a0-000004">R</span>
+        <span
+          class="pt-a0-000004">edis数据管理工具：</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          class="pt-a0-000004">redis-commander：</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          class="pt-a0-000004">https://github.com/joeferner/redis-commander</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          class="pt-a0-000004">redis-commander --open ，将使用浏览器打开</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          xml:space="preserve"
+          class="pt-000003"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a">
+        <span
+          xml:space="preserve"
+          class="pt-000000"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-000005">
+        <span
+          lang="zh-CN"
+          class="pt-000006">3、</span>
+        <span
+          lang="zh-CN"
+          class="pt-a0-000007">相关参考</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          xml:space="preserve"
+          class="pt-000003"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          class="pt-a0-000004">Redis Command 命令 - 获取 Redis 命令详情数组：</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          class="pt-a0-000004">http://www.redis.net.cn/order/3662.html</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          xml:space="preserve"
+          class="pt-000003"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000008">
+        <span
+          lang="zh-CN"
+          class="pt-a0-000009">分布式缓存在 ASP.NET Core 中</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          class="pt-a0-000004">https://docs.microsoft.com/zh-cn/aspnet/core/performance/caching/distributed?view=aspnetcore-2.2</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <span
+          xml:space="preserve"
+          class="pt-000003"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a">
+        <span
+          xml:space="preserve"
+          class="pt-000000"> </span>
+      </p>
+    </div>
+  </body>
+</html>
