@@ -1,0 +1,324 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta
+      charset="UTF-8" />
+    <title>Yibi Chen 分布式架构之Eureka</title>
+    <meta
+      name="Generator"
+      content="PowerTools for Open XML" />
+    <style>span { white-space: pre-wrap; }
+h1.pt-a3 {
+    margin-top: 12pt;
+    margin-bottom: 3pt;
+    text-align: center;
+    font-family: 宋体;
+    font-size: 16pt;
+    line-height: 108%;
+    margin-left: 0;
+    margin-right: 0;
+}
+span.pt-a0 {
+    font-family: 宋体;
+    font-size: 16pt;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+span.pt-a0-000000 {
+    font-family: 'Cambria', 'serif';
+    font-size: 16pt;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+p.pt-a {
+    text-align: justify;
+    font-family: Calibri;
+    font-size: 10.5pt;
+    line-height: 108%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: .001pt;
+}
+span.pt-000001 {
+    font-size: 10.5pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+p.pt-a-000002 {
+    text-align: justify;
+    font-family: Calibri;
+    font-size: 14pt;
+    line-height: 108%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: .001pt;
+}
+span.pt-a5 {
+    color: #0000FF;
+    font-family: Calibri;
+    font-size: 14pt;
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+p.pt-a-000003 {
+    line-height: 14.3pt;
+    text-align: left;
+    background: #1E1E1E;
+    font-family: Consolas;
+    font-size: 10.5pt;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: .001pt;
+}
+span.pt-000004 {
+    color: #D4D4D4;
+    font-size: 10.5pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+span.pt-a0-000005 {
+    color: #D4D4D4;
+    font-family: Consolas;
+    font-size: 10.5pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+p.pt-000006 {
+    margin-left: 0.29in;
+    text-indent: -0.29in;
+    text-align: justify;
+    font-family: Calibri;
+    font-size: 14pt;
+    line-height: 108%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: .001pt;
+}
+span.pt-000007 {
+    font-family: Calibri;
+    font-size: 14pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-indent: 0;
+    width: 0.292in;
+}
+span.pt-a0-000008 {
+    font-family: Calibri;
+    font-size: 14pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+p.pt-a-000009 {
+    line-height: 14.3pt;
+    text-align: left;
+    background: #1E1E1E;
+    font-family: 宋体;
+    font-size: 10.5pt;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: .001pt;
+}
+span.pt-a0-000010 {
+    color: #D4D4D4;
+    font-family: 宋体;
+    font-size: 10.5pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+p.pt-a4 {
+    margin-left: 0.29in;
+    text-indent: 0.00in;
+    text-align: justify;
+    font-family: Calibri;
+    font-size: 14pt;
+    line-height: 108%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: .001pt;
+}
+span.pt-000011 {
+    font-size: 14pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+</style>
+  </head>
+  <body>
+    <div>
+      <h1
+        dir="ltr"
+        class="pt-a3">
+        <span
+          lang="zh-CN"
+          class="pt-a0">分布式架构之</span>
+        <span
+          class="pt-a0-000000">Eureka</span>
+      </h1>
+      <p
+        dir="ltr"
+        class="pt-a">
+        <span
+          xml:space="preserve"
+          class="pt-000001"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000002">
+        <a
+          href="https://github.com/qq283335746/Yibi/tree/master/Src/Yibi/Eureka">
+          <span
+            lang="zh-CN"
+            class="pt-a5">示例源码：</span>
+        </a>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000003">
+        <span
+          xml:space="preserve"
+          class="pt-000004"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000003">
+        <span
+          class="pt-a0-000005">https://github.com/qq283335746/Yibi/tree/master/Src/Yibi/Eureka</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000003">
+        <span
+          xml:space="preserve"
+          class="pt-000004"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a">
+        <span
+          xml:space="preserve"
+          class="pt-000001"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-000006">
+        <span
+          lang="zh-CN"
+          class="pt-000007">1、</span>
+        <span
+          lang="zh-CN"
+          class="pt-a0-000008">环境搭建</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000003">
+        <span
+          xml:space="preserve"
+          class="pt-000004"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000009">
+        <span
+          lang="zh-CN"
+          class="pt-a0-000010">当前使用系统：Ubuntu18.04</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000003">
+        <span
+          class="pt-a0-000005">Eureka</span>
+        <span
+          lang="zh-CN"
+          class="pt-a0-000010">安装与配置：</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000009">
+        <span
+          lang="zh-CN"
+          class="pt-a0-000010">这里使用apollo（阿波罗）配置中心自带的Eureka，只需安装配置好apollo（阿波罗）即可。</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000003">
+        <span
+          xml:space="preserve"
+          class="pt-000004"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a">
+        <span
+          xml:space="preserve"
+          class="pt-000001"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-000006">
+        <span
+          lang="zh-CN"
+          class="pt-000007">2、</span>
+        <span
+          class="pt-a0-000008">Eureka HTTP API</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000003">
+        <span
+          xml:space="preserve"
+          class="pt-000004"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000009">
+        <span
+          lang="zh-CN"
+          class="pt-a0-000010">调用</span>
+        <span
+          class="pt-a0-000005">eureka</span>
+        <span
+          xml:space="preserve"
+          class="pt-a0-000005"> restful api，实现服务注册与发现。</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000003">
+        <span
+          xml:space="preserve"
+          class="pt-000004"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a4">
+        <span
+          xml:space="preserve"
+          class="pt-000011"> </span>
+      </p>
+    </div>
+  </body>
+</html>

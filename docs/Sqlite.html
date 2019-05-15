@@ -1,0 +1,203 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta
+      charset="UTF-8" />
+    <title>Yibi Chen 关于Sqlite使用与问题集锦</title>
+    <meta
+      name="Generator"
+      content="PowerTools for Open XML" />
+    <style>span { white-space: pre-wrap; }
+h1.pt-a3 {
+    margin-top: 12pt;
+    margin-bottom: 3pt;
+    text-align: center;
+    font-family: 宋体;
+    font-size: 16pt;
+    line-height: 108%;
+    margin-left: 0;
+    margin-right: 0;
+}
+span.pt-a0 {
+    font-family: 宋体;
+    font-size: 16pt;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+p.pt-a {
+    text-align: justify;
+    font-family: Calibri;
+    font-size: 10.5pt;
+    line-height: 108%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: .001pt;
+}
+span.pt-000000 {
+    font-size: 10.5pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+p.pt-a-000001 {
+    text-align: justify;
+    font-family: Calibri;
+    font-size: 14pt;
+    line-height: 108%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: .001pt;
+}
+span.pt-a0-000002 {
+    font-family: Calibri;
+    font-size: 14pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+span.pt-a5 {
+    color: #0000FF;
+    font-family: Calibri;
+    font-size: 14pt;
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+p.pt-a-000003 {
+    line-height: 14.3pt;
+    text-align: left;
+    background: #1E1E1E;
+    font-family: Consolas;
+    font-size: 10.5pt;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: .001pt;
+}
+span.pt-000004 {
+    color: #D4D4D4;
+    font-size: 10.5pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+span.pt-a0-000005 {
+    color: #D4D4D4;
+    font-family: Consolas;
+    font-size: 10.5pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+span.pt-000006 {
+    font-size: 14pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+</style>
+  </head>
+  <body>
+    <div>
+      <h1
+        dir="ltr"
+        class="pt-a3">
+        <span
+          lang="zh-CN"
+          class="pt-a0">数据库之Sqlite</span>
+      </h1>
+      <p
+        dir="ltr"
+        class="pt-a">
+        <span
+          xml:space="preserve"
+          class="pt-000000"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000001">
+        <span
+          lang="zh-CN"
+          class="pt-a0-000002">参考链接：</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000001">
+        <a
+          href="https://www.codeproject.com/Questions/1166694/How-can-I-access-sqlite-DB-from-another-machine">
+          <span
+            class="pt-a5">How can I access sqlite DB from another machine?</span>
+        </a>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000003">
+        <span
+          xml:space="preserve"
+          class="pt-000004"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000003">
+        <span
+          class="pt-a0-000005">Sqlite is file-based only. There is no way to talk to it over TCP/IP.</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000003">
+        <span
+          xml:space="preserve"
+          class="pt-000004"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000003">
+        <span
+          class="pt-a0-000005">Like an Access database file, you have to have the database file in a network shared folder. The path is usually going to be a UNC path, like "\\server\sharename\folderpath\databasefile".</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000003">
+        <span
+          xml:space="preserve"
+          class="pt-000004"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000003">
+        <span
+          class="pt-a0-000005">The "DataSource" part has to be part of the string you build. You don't have that. You need this:</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000003">
+        <span
+          class="pt-a0-000005">string connString = @"Data Source=\\" + txtipaddress.Text + @"\qscanDBAttacheds\test.s3db;Version=3;New=False;Compress=True;"</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000003">
+        <span
+          xml:space="preserve"
+          class="pt-000004"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000001">
+        <span
+          xml:space="preserve"
+          class="pt-000006"> </span>
+      </p>
+    </div>
+  </body>
+</html>
