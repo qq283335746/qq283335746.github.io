@@ -96,6 +96,37 @@ apollo-1.3.0/apollo-portal/target/apollo-portal-1.3.0-github.zip =》 /Publish/C
     window.location.href = "Home.html";
 </script>
 
+分布式架构之Redis
+实践篇：分布式架构中，使用Redis作为分布式缓存。
+
+相关参考：
+Redis Command 命令 - 获取 Redis 命令详情数组：
+http://www.redis.net.cn/order/3662.html
+
+分布式缓存在 ASP.NET Core 中
+https://docs.microsoft.com/zh-cn/aspnet/core/performance/caching/distributed?view=aspnetcore-2.2
+
+How to Install Redis on Ubuntu 18.04 & 16.04 LTS
+
+实践篇：分布式架构中，使用ElasticSearch数据存储。
+
+List<T> is a collection designed to use in single thread applications.
+
+ConcurrentBag<T> is a subtype of ConcurrentCollection<T> designed to simplify using collections in multi-thread environments. If you use ConcurrentCollection you will not have to lock your collection to prevent corruption by other threads. You can insert or take data from your collection with no need to write special locking codes.
+
+BlockingCollection<T> is designed to get rid of the requirement of checking if new data is available in shared collection between threads. if there is new data inserted to shared collection than your consumer thread will awake immediatily. So you do not have to check if new data is available for consumer thread in certain time intervals typically in a while loop.
+
+相关参考：
+http://geekswithblogs.net/BlackRabbitCoder/archive/2011/03/03/c.net-little-wonders-concurrentbag-and-blockingcollection.aspx
+
+Sqlite is file-based only. There is no way to talk to it over TCP/IP.
+
+Like an Access database file, you have to have the database file in a network shared folder. The path is usually going to be a UNC path, like "\\server\sharename\folderpath\databasefile".
+
+The "DataSource" part has to be part of the string you build. You don't have that. You need this:
+string connString = @"Data Source=\\" + txtipaddress.Text + @"\qscanDBAttacheds\test.s3db;Version=3;New=False;Compress=True;"
+
+阅读篇：
 
 
 
