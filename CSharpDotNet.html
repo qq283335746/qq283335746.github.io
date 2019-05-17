@@ -71,6 +71,42 @@ span.pt-000003 {
     margin: 0;
     padding: 0;
 }
+span.pt-a0-000004 {
+    font-family: Calibri;
+    font-size: 10.5pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+p.pt-a-000005 {
+    line-height: 14.3pt;
+    text-align: left;
+    background: #1E1E1E;
+    font-family: Consolas;
+    font-size: 10.5pt;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: .001pt;
+}
+span.pt-000006 {
+    color: #D4D4D4;
+    font-size: 10.5pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+span.pt-a0-000007 {
+    color: #D4D4D4;
+    font-family: Consolas;
+    font-size: 10.5pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
 </style>
   </head>
   <body>
@@ -140,22 +176,6 @@ span.pt-000003 {
           <span
             lang="zh-CN"
             class="pt-a3">托管线程处理的最佳做法</span>
-        </a>
-      </p>
-      <p
-        dir="ltr"
-        class="pt-a-000001">
-        <span
-          xml:space="preserve"
-          class="pt-000003"> </span>
-      </p>
-      <p
-        dir="ltr"
-        class="pt-a-000000">
-        <a
-          href="https://docs.microsoft.com/zh-cn/dotnet/standard/parallel-programming/">
-          <span
-            class="pt-a3">.NET 中的并行编程</span>
         </a>
       </p>
       <p
@@ -255,6 +275,93 @@ span.pt-000003 {
           <span
             class="pt-a3">C#中的多线程 - 高级多线程</span>
         </a>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000001">
+        <span
+          xml:space="preserve"
+          class="pt-000003"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000000">
+        <span
+          class="pt-a0">ConcurrentBag&lt;T&gt;</span>
+        <span
+          lang="zh-CN"
+          class="pt-a0">、</span>
+        <span
+          class="pt-a0">BlockingCollection&lt;T&gt;</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000001">
+        <span
+          lang="zh-CN"
+          class="pt-a0-000004">相关参考：</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000000">
+        <a
+          href="http://geekswithblogs.net/BlackRabbitCoder/archive/2011/03/03/c.net-little-wonders-concurrentbag-and-blockingcollection.aspx">
+          <span
+            class="pt-a3">C#/.NET Little Wonders: ConcurrentBag and BlockingCollection</span>
+        </a>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000005">
+        <span
+          xml:space="preserve"
+          class="pt-000006"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000005">
+        <span
+          class="pt-a0-000007">List&lt;T&gt; is a collection designed to use in single thread applications.</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000005">
+        <span
+          xml:space="preserve"
+          class="pt-000006"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000005">
+        <span
+          class="pt-a0-000007">ConcurrentBag&lt;T&gt; is a subtype of ConcurrentCollection&lt;T&gt; designed to simplify using collections in multi-thread environments. If you use ConcurrentCollection you will not have to lock your collection to prevent corruption by other threads. You can insert or take data from your collection with no need to write special locking codes.</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000005">
+        <span
+          xml:space="preserve"
+          class="pt-000006"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000005">
+        <span
+          class="pt-a0-000007">BlockingCollection&lt;T&gt; is designed to get rid of the requirement of checking if new data is available in shared collection between threads. if there is new data inserted to shared collection than your consumer thread will awake immediatily. So you do not have to check if new data is available for consumer thread in certain time intervals typically in a while loop.</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000005">
+        <span
+          xml:space="preserve"
+          class="pt-000006"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000001">
+        <span
+          xml:space="preserve"
+          class="pt-000002"> </span>
       </p>
     </div>
   </body>

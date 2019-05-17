@@ -2,7 +2,7 @@
   <head>
     <meta
       charset="UTF-8" />
-    <title>Yibi Chen .Net开发之NuGet</title>
+    <title>Yibi Chen 分布式架构之Nacos</title>
     <meta
       name="Generator"
       content="PowerTools for Open XML" />
@@ -11,14 +11,14 @@ h1.pt-a3 {
     margin-top: 12pt;
     margin-bottom: 3pt;
     text-align: center;
-    font-family: 'Cambria', 'serif';
+    font-family: 宋体;
     font-size: 16pt;
     line-height: 108%;
     margin-left: 0;
     margin-right: 0;
 }
 span.pt-a0 {
-    font-family: 'Cambria', 'serif';
+    font-family: 宋体;
     font-size: 16pt;
     font-style: normal;
     font-weight: bold;
@@ -43,8 +43,8 @@ span.pt-000000 {
     padding: 0;
 }
 p.pt-000001 {
-    margin-left: 0.50in;
-    text-indent: -0.50in;
+    margin-left: 0.29in;
+    text-indent: -0.29in;
     text-align: justify;
     font-family: Calibri;
     font-size: 14pt;
@@ -62,7 +62,7 @@ span.pt-000002 {
     padding: 0;
     display: inline-block;
     text-indent: 0;
-    width: 0.500in;
+    width: 0.292in;
 }
 span.pt-a0-000003 {
     font-family: Calibri;
@@ -120,25 +120,43 @@ span.pt-a0-000008 {
     margin: 0;
     padding: 0;
 }
-span.pt-a0-000009 {
-    color: #808080;
+p.pt-000009 {
+    line-height: 14.3pt;
+    margin-bottom: 0;
+    margin-left: 0.25in;
+    text-indent: -0.25in;
+    text-align: left;
+    background: #1E1E1E;
     font-family: Consolas;
+    font-size: 10.5pt;
+    margin-top: 0;
+    margin-right: 0;
+}
+span.pt-000010 {
+    color: #D4D4D4;
+    font-family: 宋体;
     font-size: 10.5pt;
     font-style: normal;
     font-weight: normal;
     margin: 0;
     padding: 0;
+    display: inline-block;
+    text-indent: 0;
+    width: 0.250in;
 }
-span.pt-a0-000010 {
-    color: #F44747;
-    font-family: Consolas;
+p.pt-000011 {
+    line-height: 14.3pt;
+    margin-left: 0.25in;
+    text-indent: -0.25in;
+    text-align: left;
+    background: #1E1E1E;
+    font-family: 宋体;
     font-size: 10.5pt;
-    font-style: normal;
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: .001pt;
 }
-p.pt-a-000011 {
+p.pt-a-000012 {
     text-align: justify;
     font-family: Calibri;
     font-size: 14pt;
@@ -148,7 +166,7 @@ p.pt-a-000011 {
     margin-right: 0;
     margin-bottom: .001pt;
 }
-span.pt-000012 {
+span.pt-000013 {
     font-size: 14pt;
     font-style: normal;
     font-weight: normal;
@@ -163,7 +181,8 @@ span.pt-000012 {
         dir="ltr"
         class="pt-a3">
         <span
-          class="pt-a0">.Net开发之NuGet</span>
+          lang="zh-CN"
+          class="pt-a0">分布式架构之Nacos</span>
       </h1>
       <p
         dir="ltr"
@@ -180,7 +199,7 @@ span.pt-000012 {
           class="pt-000002">1、</span>
         <span
           lang="zh-CN"
-          class="pt-a0-000003">使用Visual Studio生成自动打包</span>
+          class="pt-a0-000003">环境搭建</span>
       </p>
       <p
         dir="ltr"
@@ -194,153 +213,20 @@ span.pt-000012 {
         class="pt-a-000006">
         <span
           lang="zh-CN"
-          class="pt-a0-000007">在解决方案，打开编辑.csproj文件：</span>
+          class="pt-a0-000007">当前使用系统：Ubuntu18.04</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000006">
+        <span
+          lang="zh-CN"
+          class="pt-a0-000007">安装与配置：</span>
       </p>
       <p
         dir="ltr"
         class="pt-a-000004">
         <span
-          class="pt-a0-000008">&lt;PropertyGroup&gt;</span>
-      </p>
-      <p
-        dir="ltr"
-        class="pt-a-000004">
-        <span
-          xml:space="preserve"
-          class="pt-a0-000008">    &lt;Version&gt;1.0.0</span>
-        <span
-          class="pt-a0-000009">&lt;/</span>
-        <span
-          class="pt-a0-000010">Version</span>
-        <span
-          class="pt-a0-000009">&gt;</span>
-      </p>
-      <p
-        dir="ltr"
-        class="pt-a-000004">
-        <span
-          xml:space="preserve"
-          class="pt-a0-000008">    &lt;Authors&gt;yibi chen</span>
-        <span
-          class="pt-a0-000009">&lt;/</span>
-        <span
-          class="pt-a0-000010">Authors</span>
-        <span
-          class="pt-a0-000009">&gt;</span>
-      </p>
-      <p
-        dir="ltr"
-        class="pt-a-000004">
-        <span
-          xml:space="preserve"
-          class="pt-a0-000008">    &lt;Company&gt;yibi chen</span>
-        <span
-          class="pt-a0-000009">&lt;/</span>
-        <span
-          class="pt-a0-000010">Company</span>
-        <span
-          class="pt-a0-000009">&gt;</span>
-      </p>
-      <p
-        dir="ltr"
-        class="pt-a-000004">
-        <span
-          xml:space="preserve"
-          class="pt-a0-000008">    &lt;Description&gt;your project descr</span>
-        <span
-          class="pt-a0-000009">&lt;/</span>
-        <span
-          class="pt-a0-000010">Description</span>
-        <span
-          class="pt-a0-000009">&gt;</span>
-      </p>
-      <p
-        dir="ltr"
-        class="pt-a-000004">
-        <span
-          xml:space="preserve"
-          class="pt-a0-000008">    &lt;GeneratePackageOnBuild&gt;true</span>
-        <span
-          class="pt-a0-000009">&lt;/</span>
-        <span
-          class="pt-a0-000010">GeneratePackageOnBuild</span>
-        <span
-          class="pt-a0-000009">&gt;</span>
-      </p>
-      <p
-        dir="ltr"
-        class="pt-a-000004">
-        <span
-          xml:space="preserve"
-          class="pt-a0-000008">    &lt;CopyLocalLockFileAssemblies&gt;true</span>
-        <span
-          class="pt-a0-000009">&lt;/</span>
-        <span
-          class="pt-a0-000010">CopyLocalLockFileAssemblies</span>
-        <span
-          class="pt-a0-000009">&gt;</span>
-      </p>
-      <p
-        dir="ltr"
-        class="pt-a-000004">
-        <span
-          xml:space="preserve"
-          class="pt-a0-000008">    &lt;IncludeSymbols&gt;true</span>
-        <span
-          class="pt-a0-000009">&lt;/</span>
-        <span
-          class="pt-a0-000010">IncludeSymbols</span>
-        <span
-          class="pt-a0-000009">&gt;</span>
-      </p>
-      <p
-        dir="ltr"
-        class="pt-a-000004">
-        <span
-          xml:space="preserve"
-          class="pt-a0-000008">    &lt;EmbedAllSources&gt;true</span>
-        <span
-          class="pt-a0-000009">&lt;/</span>
-        <span
-          class="pt-a0-000010">EmbedAllSources</span>
-        <span
-          class="pt-a0-000009">&gt;</span>
-      </p>
-      <p
-        dir="ltr"
-        class="pt-a-000004">
-        <span
-          xml:space="preserve"
-          class="pt-a0-000008">    &lt;SymbolPackageFormat&gt;snupkg</span>
-        <span
-          class="pt-a0-000009">&lt;/</span>
-        <span
-          class="pt-a0-000010">SymbolPackageFormat</span>
-        <span
-          class="pt-a0-000009">&gt;</span>
-      </p>
-      <p
-        dir="ltr"
-        class="pt-a-000004">
-        <span
-          xml:space="preserve"
-          class="pt-a0-000008">    &lt;GenerateDocumentationFile&gt;true</span>
-        <span
-          class="pt-a0-000009">&lt;/</span>
-        <span
-          class="pt-a0-000010">GenerateDocumentationFile</span>
-        <span
-          class="pt-a0-000009">&gt;</span>
-      </p>
-      <p
-        dir="ltr"
-        class="pt-a-000004">
-        <span
-          class="pt-a0-000009">&lt;/</span>
-        <span
-          class="pt-a0-000010">PropertyGroup</span>
-        <span
-          class="pt-a0-000009">&gt;</span>
+          class="pt-a0-000008">https://nacos.io/zh-cn/docs/quick-start.html</span>
       </p>
       <p
         dir="ltr"
@@ -351,10 +237,112 @@ span.pt-000012 {
       </p>
       <p
         dir="ltr"
-        class="pt-a-000011">
+        class="pt-a-000006">
+        <span
+          lang="zh-CN"
+          class="pt-a0-000007">正常启动方式：</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000004">
+        <span
+          class="pt-a0-000008">sh startup.sh -m standalone</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000006">
+        <span
+          lang="zh-CN"
+          class="pt-a0-000007">但执行后报错，解决方案：</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-000009">
+        <span
+          lang="zh-CN"
+          class="pt-000010">1、</span>
+        <span
+          class="pt-a0-000008">bash -f ./startup.sh -m standalone</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-000011">
+        <span
+          lang="zh-CN"
+          class="pt-000010">2、</span>
+        <span
+          lang="zh-CN"
+          class="pt-a0-000007">或者可以修改 startup.sh 头文件：</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000004">
+        <span
+          class="pt-a0-000008">#!/bin/sh 改成 #!/bin/bash</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000006">
+        <span
+          lang="zh-CN"
+          class="pt-a0-000007">然后采用 .startup.sh -m standalone &amp;命令</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000004">
         <span
           xml:space="preserve"
-          class="pt-000012"> </span>
+          class="pt-000005"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000006">
+        <span
+          lang="zh-CN"
+          class="pt-a0-000007">运行成功后打开浏览器并访问：</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000004">
+        <span
+          class="pt-a0-000008">http://192.168.21.131:8848/nacos/index.html</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000006">
+        <span
+          lang="zh-CN"
+          class="pt-a0-000007">输入账号和密码：</span>
+        <span
+          class="pt-a0-000008">nacos</span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000004">
+        <span
+          xml:space="preserve"
+          class="pt-000005"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000012">
+        <span
+          xml:space="preserve"
+          class="pt-000013"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000012">
+        <span
+          xml:space="preserve"
+          class="pt-000013"> </span>
+      </p>
+      <p
+        dir="ltr"
+        class="pt-a-000012">
+        <span
+          xml:space="preserve"
+          class="pt-000013"> </span>
       </p>
     </div>
   </body>
