@@ -126,7 +126,9 @@ Like an Access database file, you have to have the database file in a network sh
 The "DataSource" part has to be part of the string you build. You don't have that. You need this:
 string connString = @"Data Source=\\" + txtipaddress.Text + @"\qscanDBAttacheds\test.s3db;Version=3;New=False;Compress=True;"
 
-阅读篇：
+阅读篇：关于Sqlite的使用与问题集锦
+
+dotnet nuget push  -s http://nuget.dev.yunexpress.com/v3/index.json Nebula.Modules.EurekaToConsul.1.0.6.nupkg -k 6v8sfQjH3br9OuhVf6Vylv35MTecSWUAwT8clIeIF3ksDluz7lLhJKvzIGSYRpKA
 
 
-
+技术点：HttpClient设置超时最佳实践
