@@ -131,4 +131,12 @@ string connString = @"Data Source=\\" + txtipaddress.Text + @"\qscanDBAttacheds\
 dotnet nuget push  -s http://nuget.dev.yunexpress.com/v3/index.json Nebula.Modules.EurekaToConsul.1.0.6.nupkg -k 6v8sfQjH3br9OuhVf6Vylv35MTecSWUAwT8clIeIF3ksDluz7lLhJKvzIGSYRpKA
 
 
-技术点：HttpClient设置超时最佳实践
+开发人员常用命令：
+------------------------------------------------------------
+查看端口相关操作：
+查看指定端口，可以结合grep命令：sudo netstat -ap | grep 8500
+------------------------------------------------------------
+查看进程ID相关操作：
+列出占用端口的进程ID: sudo netstat -antup 
+
+Windows Subsystem for Linux (WSL) 
