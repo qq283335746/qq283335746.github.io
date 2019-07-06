@@ -5,8 +5,4 @@ plugins:
 relative_links:
   enabled: true
   collections: true
-include:
-  - index.md
-  - consul.md
-  - faq.md
 theme: jekyll-theme-cayman
