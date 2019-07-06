@@ -9,3 +9,4 @@ include:
   - index.md
   - consul.md
   - faq.md
+theme: jekyll-theme-cayman
