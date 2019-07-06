@@ -1,3 +1,5 @@
+title: welcome to yibi chen site
+description: this is my site.
 plugins:
   - jekyll-relative-links
 relative_links:
