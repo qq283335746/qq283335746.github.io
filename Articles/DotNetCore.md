@@ -69,6 +69,8 @@ using (var rng = RandomNumberGenerator.Create())
 技术点：ASP.NET Core IOptions的使用；ServiceCollectionExtensions中Action的使用
 ```
 
+[ASP.NET CORE Token Authentication and Authorization using JWT (No Cookies) – Part 1](https://www.codeproject.com/Articles/5160941/ASP-NET-CORE-Token-Authentication-and-Authorizatio)
+
 .Net Core依赖注入代码片段集锦：
 ```
 public static void Main(string[] args)
