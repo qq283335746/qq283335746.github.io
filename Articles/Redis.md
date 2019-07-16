@@ -18,11 +18,8 @@ redis-commander：
 https://github.com/joeferner/redis-commander
 redis-commander --open ，将使用浏览器打开
 ```
-三、相关参考
-```
-Redis Command 命令 - 获取 Redis 命令详情数组：
-http://www.redis.net.cn/order/3662.html
+三、相关参考链接
 
-分布式缓存在 ASP.NET Core 中
-https://docs.microsoft.com/zh-cn/aspnet/core/performance/caching/distributed?view=aspnetcore-2.2
-```
+[分布式缓存在 ASP.NET Core 中](https://docs.microsoft.com/zh-cn/aspnet/core/performance/caching/distributed?view=aspnetcore-2.2)
+
+[Redis命令、教程等](http://www.redis.net.cn/order/3662.html)

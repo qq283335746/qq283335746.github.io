@@ -15,3 +15,9 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
 </PropertyGroup>
 ```
+
+二、相关链接
+
+[承载自己的 NuGet 源](https://docs.microsoft.com/zh-cn/nuget/hosting-packages/overview)
+
+[网络](https://docs.microsoft.com/zh-cn/windows-server/networking/networking)

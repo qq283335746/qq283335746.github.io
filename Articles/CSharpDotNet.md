@@ -1,4 +1,6 @@
 # C#/.NET编程进阶
+[异步编程](https://docs.microsoft.com/zh-cn/dotnet/csharp/async)
+
 [集合和数据结构](https://docs.microsoft.com/zh-cn/dotnet/standard/collections/selecting-a-collection-class)
 
 [线程安全集合](https://docs.microsoft.com/zh-cn/dotnet/standard/collections/thread-safe/)
@@ -18,6 +20,11 @@
 [多线程中的锁 volatile、Interlocked、ReaderWriterLockSlim](https://cloud.tencent.com/developer/article/1131776)
 
 [C#中的多线程 - 高级多线程](https://blog.gkarch.com/threading/part4.html)
+
+[Getting Started with NPOI](https://github.com/tonyqus/npoi/wiki/Getting-Started-with-NPOI)
+```
+导读：NPOI系列教程
+```
 
 [Converting PDF to Text in C#](https://www.codeproject.com/Articles/12445/Converting-PDF-to-Text-in-C)
 ```
@@ -50,17 +57,3 @@ services.AddMvc(opts=> {
 })
 
 ```
-
-[]()
-
-[]()
-
-[]()
-
-[]()
-
-[]()
-
-[]()
-
-[]()

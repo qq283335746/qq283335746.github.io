@@ -29,3 +29,7 @@ sudo -i -u postgres
 $ sudo -u postgres psql postgres
 postgres=# \password postgres
 ```
+
+二、客户端工具
+
+[pgAdmin](https://www.pgadmin.org/download/)

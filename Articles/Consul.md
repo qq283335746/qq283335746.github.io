@@ -41,3 +41,7 @@ retry_join=["xx.xxx.x.57"]
 ```
 调用consul restful api，实现服务注册与发现。
 ```
+
+三、相关参考链接
+
+[注册中心 Consul 使用详解（含服务注册与发现比较）](http://www.360linker.com/wfw/657.jhtml)

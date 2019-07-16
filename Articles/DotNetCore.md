@@ -13,6 +13,12 @@
 技术点：ASP.NET Core官方技术文档。
 ```
 
+[EF Core文档](https://docs.microsoft.com/zh-cn/ef/#pivot=efcore)
+
+[.net core System.Net.Http Namespace](https://docs.microsoft.com/zh-cn/dotnet/api/system.net.http?view=netcore-2.2)
+
+[Service Fabric 文档](https://docs.microsoft.com/zh-cn/azure/service-fabric/)
+
 [确保 .NET 微服务和 Web 应用的安全性](https://docs.microsoft.com/zh-cn/dotnet/standard/microservices-architecture/secure-net-microservices-web-applications/)
 ```
 技术点：ASP.NET Core身份认证、授权。
@@ -70,6 +76,12 @@ using (var rng = RandomNumberGenerator.Create())
 ```
 
 [ASP.NET CORE Token Authentication and Authorization using JWT (No Cookies) – Part 1](https://www.codeproject.com/Articles/5160941/ASP-NET-CORE-Token-Authentication-and-Authorizatio)
+
+[EF Core 实现多租户](http://www.sohu.com/a/275780125_468635)
+
+[Defensive database context for multi-tenant ASP.NET Core applications --多租户实现](https://gunnarpeipman.com/net/ef-core-global-query-filters/)
+
+[List of ASP.NET Web API and HttpClient Samples](https://devblogs.microsoft.com/aspnet/list-of-asp-net-web-api-and-httpclient-samples/)
 
 .Net Core依赖注入代码片段集锦：
 ```

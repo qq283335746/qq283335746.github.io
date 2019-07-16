@@ -25,3 +25,11 @@ show databases;
 use mysql;
 show tables;
 ```
+
+二、客户端工具
+
+[MySQL Workbench](https://dev.mysql.com/downloads/)
+
+三、相关链接
+
+[What is the best MySQL client for Mac OS X or Windows?](https://www.quora.com/What-is-the-best-MySQL-client-for-Mac-OS-X-or-Windows)
