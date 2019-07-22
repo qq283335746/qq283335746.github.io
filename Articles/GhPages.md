@@ -3,6 +3,10 @@
 导读：git开发使用技术、github pages相关技术等
 ```
 
+[github pages帮助文档-中文](https://help.github.com/cn)
+
+[Git 备忘清单 -中文](https://github.github.com/training-kit/downloads/zh_CN/github-git-cheat-sheet/)
+
 [How to deploy Ionic 4 app to Github pages?](https://stackoverflow.com/questions/53036381/how-to-deploy-ionic-4-app-to-github-pages)
 
 [Quickly deploy Angular CLI project to GitHub Pages：](https://medium.com/@swarnakishore/deploying-angular-cli-project-to-github-pages-db49246598a1)
