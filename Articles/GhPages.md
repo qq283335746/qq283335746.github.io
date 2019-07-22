@@ -1,3 +1,8 @@
+# git、github pages
+```
+导读：git开发使用技术、github pages相关技术等
+```
+
 [How to deploy Ionic 4 app to Github pages?](https://stackoverflow.com/questions/53036381/how-to-deploy-ionic-4-app-to-github-pages)
 
 [Quickly deploy Angular CLI project to GitHub Pages：](https://medium.com/@swarnakishore/deploying-angular-cli-project-to-github-pages-db49246598a1)
@@ -19,6 +24,16 @@
 
 git相关操作
 ```
+.gitignore不起作用解决方法：
+git rm -r --cached .
+git add .
+git commit -m 'add .gitignore'
+git push origin master
+
+查找.svn目录并删除：
+find . -name '.svn' -type d -print0 | xargs -0 rm -rf
+git commit -a -m "Deleting all .svn folders and files"
+
 git checkout --orphan gh-pages
 
 # Always ensure you’re in the right place before deleting files with this command

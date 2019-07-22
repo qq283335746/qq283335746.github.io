@@ -1,4 +1,5 @@
 # C#/.NET编程进阶
+
 [异步编程](https://docs.microsoft.com/zh-cn/dotnet/csharp/async)
 
 [集合和数据结构](https://docs.microsoft.com/zh-cn/dotnet/standard/collections/selecting-a-collection-class)
@@ -20,6 +21,11 @@
 [多线程中的锁 volatile、Interlocked、ReaderWriterLockSlim](https://cloud.tencent.com/developer/article/1131776)
 
 [C#中的多线程 - 高级多线程](https://blog.gkarch.com/threading/part4.html)
+
+[Implementing the Singleton Pattern in C#](https://csharpindepth.com/articles/Singleton)
+```
+导读：c#实现单例的6种模式
+```
 
 [Getting Started with NPOI](https://github.com/tonyqus/npoi/wiki/Getting-Started-with-NPOI)
 ```
