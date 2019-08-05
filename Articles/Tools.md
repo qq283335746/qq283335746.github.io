@@ -25,3 +25,9 @@ YCFHQ-9DWCY-DKV88-T2TMH-G7BHP
 Visio Professional 2013：
 3RC9N-F9MDP-GVYKG-9KMB4-MWPFR、VVJJX-TNXV9-K2HCY-33GD9-TF2DH
 ```
+
+GitHub中README.md添加图片方式：
+```
+如GitHub有个My仓库master主分支下有目录及文件：BaoAnQuZhongXinYiYuan/jianyanbaogaodan004.jpg，则在.md文档引用该文件地址应是：
+![image](https://github.com/qq283335746/My/raw/master/MyImages/BaoAnQuZhongXinYiYuan/jianyanbaogaodan004.jpg)，注意：blob应改为raw。
+```

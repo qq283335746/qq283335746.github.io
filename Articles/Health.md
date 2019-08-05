@@ -5,3 +5,5 @@
 [骨盆X线解剖(图文)](http://www.xctmr.com/anatomy/x-ray/2009-05-04/98.html)
 
 [人体骨骼系统（好图）建议大家收藏](https://zhuanlan.zhihu.com/p/33058392)
+
+[出现左下腹部疼痛，可能是得了这种病，很多人都忽略了！](https://kknews.cc/health/gb2j389.html)
