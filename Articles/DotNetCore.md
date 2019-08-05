@@ -1,5 +1,32 @@
 # DotNetCore技术集锦
 
+[ASP.NET Core官方技术文档参考](https://docs.microsoft.com/zh-cn/aspnet/core/security/?view=aspnetcore-2.2)
+```
+技术点：ASP.NET Core官方技术文档。
+```
+
+[EF Core文档](https://docs.microsoft.com/zh-cn/ef/#pivot=efcore)
+```
+技术点：EF Core官方技术文档。
+```
+
+[Microsoft.AspNetCore.Authentication.OAuth](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.OAuth/)
+```
+技术点：ASP.NET Core 身份认证中间件;
+
+相关案例源码参考：
+【钉钉、QQ/Weixin 登录】 https://github.com/Kiakaa/ExternalLoginMiddleWare
+
+【QQ登录】https://www.nuget.org/packages/AspNet.Security.OAuth.QQ/
+【微信登录】 https://www.nuget.org/packages/AspNet.Security.OAuth.Weixin/
+```
+
+[AspNet.Security.OAuth.Providers](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers)
+
+[ASP.NET Core 中的那些认证中间件及一些重要知识点](https://www.cnblogs.com/savorboard/p/aspnetcore-authentication.html)
+
+[ASP.NET Core 中的运行状况检查](https://docs.microsoft.com/zh-cn/aspnet/core/host-and-deploy/health-checks?view=aspnetcore-2.2)
+
 [运行状况监视](https://docs.microsoft.com/zh-cn/dotnet/standard/microservices-architecture/implement-resilient-applications/monitor-app-health)
 ```
 技术点：ASP.NET Core 服务中实现运行状况检查;使用监视程序（AspNetCore.Diagnostics.HealthChecks、AspNetCore.HealthChecks.UI）
@@ -9,13 +36,6 @@
 ```
 技术点：HttpClient设置超时最佳实践。
 ```
-
-[ASP.NET Core官方技术文档参考](https://docs.microsoft.com/zh-cn/aspnet/core/security/?view=aspnetcore-2.2)
-```
-技术点：ASP.NET Core官方技术文档。
-```
-
-[EF Core文档](https://docs.microsoft.com/zh-cn/ef/#pivot=efcore)
 
 [.net core System.Net.Http Namespace](https://docs.microsoft.com/zh-cn/dotnet/api/system.net.http?view=netcore-2.2)
 
@@ -75,6 +95,11 @@ using (var rng = RandomNumberGenerator.Create())
 [ASP.NET Core 中的缓存](https://www.cnblogs.com/royzshare/p/9474740.html)
 ```
 技术点：ASP.NET Core IOptions的使用；ServiceCollectionExtensions中Action的使用
+```
+
+[Injecting LiteDb as a service in ASP.NET Core](https://codehaks.github.io/2018/10/01/injecting-litedb-as-a-service-in-asp.net-core.html/)
+```
+技术点：ASP.NET Core IOptions的使用；ASP.NET Core LiteDB；LiteDB 限制：https://github.com/mbdavid/LiteDB/wiki/How-LiteDB-Works
 ```
 
 [ASP.NET CORE Token Authentication and Authorization using JWT (No Cookies) – Part 1](https://www.codeproject.com/Articles/5160941/ASP-NET-CORE-Token-Authentication-and-Authorizatio)

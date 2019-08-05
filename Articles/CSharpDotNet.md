@@ -32,6 +32,11 @@
 导读：NPOI系列教程
 ```
 
+[PDF File Writer C# Class Library](https://www.codeproject.com/Articles/570682/PDF-File-Writer-Csharp-Class-Library-Version-1-26)
+```
+技术点：PDF/C# .NET class library
+```
+
 [Converting PDF to Text in C#](https://www.codeproject.com/Articles/12445/Converting-PDF-to-Text-in-C)
 ```
 导读：There are several main methods for extracting text from PDF files in .NET:
@@ -62,4 +67,16 @@ services.AddMvc(opts=> {
     opts.Filters.Add(typeof(ModelStateFeatureFilter));
 })
 
+```
+
+多线程代码片段：
+```
+var t1 = new Thread(() =>
+{
+    RunTimer();
+});
+t1.Start();
+
+var t6 = new Thread(new ThreadStart(RunTimer6));
+t6.Start();
 ```
