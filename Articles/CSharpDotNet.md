@@ -27,6 +27,11 @@
 导读：c#实现单例的6种模式
 ```
 
+[Introducting Lazy Evaluation And Fair Scheduling In C#](https://www.codeproject.com/Articles/5162791/Introducting-Lazy-Evaluation-And-Fair-Scheduling-I)
+```
+导读：欣赏代码。
+```
+
 [Getting Started with NPOI](https://github.com/tonyqus/npoi/wiki/Getting-Started-with-NPOI)
 ```
 导读：NPOI系列教程
@@ -79,4 +84,70 @@ t1.Start();
 
 var t6 = new Thread(new ThreadStart(RunTimer6));
 t6.Start();
+```
+
+密码生成器代码片段：
+```
+GenerateHelper.cs：
+
+public class GenerateHelper
+{
+    private const string _sourceDefault = "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    private const string _sourceStrong = "`~!@#$%^&*()-_=+[]{}\\|;:'\",<.>/?";
+    private static List<char> _sourceDefaultDatas => _sourceDefault.ToCharArray().ToList();
+    private static int _sourceDefaultLength = _sourceDefault.Length;
+
+    public static string CreateGenerateCode(PasswordType passwordType)
+    {
+        List<char> datas = null;
+        int n = 0;
+
+        switch (passwordType)
+        {
+            case PasswordType.Default:
+                datas = _sourceDefaultDatas;
+                n = 20;
+                break;
+            case PasswordType.Stronger:
+                var strongSource = _sourceDefault + _sourceStrong;
+
+
+                datas = strongSource.ToList<char>();
+                n = 30;
+                break;
+            default:
+                throw new ArgumentException("不支持的密码类型", nameof(passwordType));
+        }
+
+        return string.Join("", CreateRandomCodes(datas,n));
+
+    }
+
+    private static IEnumerable<char> CreateRandomCodes(List<char> datas, int n)
+    {
+        byte[] bytes = new byte[n];
+        using (var rng = RandomNumberGenerator.Create())
+        {
+            rng.GetBytes(bytes);
+        }
+
+        var itemLength = datas.Count;
+
+        foreach (var item in bytes)
+        {
+            var index = item % itemLength;
+
+            yield return datas[index];
+        }
+    }
+}
+
+
+EnumPasswordType.cs：
+
+public enum PasswordType
+{
+    Default,
+    Stronger
+}
 ```

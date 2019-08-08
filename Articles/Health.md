@@ -7,3 +7,5 @@
 [人体骨骼系统（好图）建议大家收藏](https://zhuanlan.zhihu.com/p/33058392)
 
 [出现左下腹部疼痛，可能是得了这种病，很多人都忽略了！](https://kknews.cc/health/gb2j389.html)
+
+[中医世家-第三节 腹痛](http://www.zysj.com.cn/lilunshuji/neikexue/76-5-3.html)
