@@ -18,6 +18,7 @@ Xamarin.Forms优秀插件
 Plugin.MediaManager.Forms：
 https://github.com/martijn00/XamarinMediaManager
 
+Xamarin.Plugin.FilePicker：
 
 ```
 
