@@ -110,6 +110,8 @@ using (var rng = RandomNumberGenerator.Create())
 
 [List of ASP.NET Web API and HttpClient Samples](https://devblogs.microsoft.com/aspnet/list-of-asp-net-web-api-and-httpclient-samples/)
 
+[ASP.NET Core Dependency Injection Deep Dive](https://joonasw.net/view/aspnet-core-di-deep-dive)
+
 .Net Core依赖注入代码片段集锦：
 ```
 public static void Main(string[] args)
@@ -130,6 +132,21 @@ public void RunSample()
         
     }
 }
+
+IServiceProvider：
+
+HttpContext --RequestServices
+var someservice = (ISomeService)context.HttpContext.RequestServices.GetService(typeof(ISomeService));
+
+IApplicationBuilder --ApplicationServices：
+public void Configure(IApplicationBuilder app)
+{
+    var serviceProvider = app.ApplicationServices;
+    var hostingEnv = serviceProvider.GetService<IHostingEnvironment>();
+}
+
+IServiceProvider provider：
+provider.CreateScope().ServiceProvider.GetServices(typeof(IStudentService));
 ```
 .net core跨域设置代码片段：
 ```

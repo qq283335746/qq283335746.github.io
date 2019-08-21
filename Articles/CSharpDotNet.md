@@ -117,7 +117,6 @@ public class GenerateHelper
         }
 
         return string.Join("", CreateRandomCodes(datas,n));
-
     }
 
     private static IEnumerable<char> CreateRandomCodes(List<char> datas, int n)
