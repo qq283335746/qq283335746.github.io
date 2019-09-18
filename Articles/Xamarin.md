@@ -13,6 +13,12 @@
 
 [《使用 Xamarin.Forms 的企业应用程序模式》电子书](https://docs.microsoft.com/zh-cn/xamarin/xamarin-forms/enterprise-application-patterns/)
 
+[Repeat Alarm Example In Android Using AlarmManager](https://www.stacktips.com/tutorials/android/repeat-alarm-example-in-android)
+
+[Android Alarm Clock Tutorial](https://javapapers.com/android/android-alarm-clock-tutorial/)
+
+[Backgrounding with Xamarin.Forms](https://robgibbens.com/backgrounding-with-xamarin-forms/)
+
 Xamarin.Forms优秀插件
 ```
 Plugin.MediaManager.Forms：

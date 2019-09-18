@@ -1,4 +1,4 @@
-# 工具集
+﻿# 工具集
 ```
 导读：开发人员常用工具、注册码、编程技巧等
 ```
@@ -28,6 +28,8 @@ VMware Workstation 12：
 Visio Professional 2013：
 3RC9N-F9MDP-GVYKG-9KMB4-MWPFR、VVJJX-TNXV9-K2HCY-33GD9-TF2DH
 ```
+
+(macOS下载与安装教程)[https://hindugeek.com/10-ways-install-mac-os-windows-pc-virtually/]
 
 GitHub中README.md添加图片方式：
 ```

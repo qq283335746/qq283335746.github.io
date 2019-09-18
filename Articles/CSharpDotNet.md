@@ -1,5 +1,7 @@
 # C#/.NET编程进阶
 
+[欢迎使用 .NET](https://docs.microsoft.com/zh-cn/dotnet/welcome)
+
 [异步编程](https://docs.microsoft.com/zh-cn/dotnet/csharp/async)
 
 [集合和数据结构](https://docs.microsoft.com/zh-cn/dotnet/standard/collections/selecting-a-collection-class)
@@ -30,6 +32,11 @@
 [Introducting Lazy Evaluation And Fair Scheduling In C#](https://www.codeproject.com/Articles/5162791/Introducting-Lazy-Evaluation-And-Fair-Scheduling-I)
 ```
 导读：欣赏代码。
+```
+
+[Async OOP 2: Constructors](https://blog.stephencleary.com/2013/01/async-oop-2-constructors.html)
+```
+导读：async/await在构造函数中使用。
 ```
 
 [Getting Started with NPOI](https://github.com/tonyqus/npoi/wiki/Getting-Started-with-NPOI)
@@ -84,6 +91,23 @@ t1.Start();
 
 var t6 = new Thread(new ThreadStart(RunTimer6));
 t6.Start();
+```
+
+DateTime Local to DateTime Utc 时间戳：
+```
+private long ToUnixDateTime(DateTime dateTime)
+{
+    if(dateTime.Kind != DateTimeKind.Utc)
+    {
+        dateTime = dateTime.ToUniversalTime();
+    }
+    return (long)(dateTime.Subtract(new DateTime(1970, 1, 1))).TotalMilliseconds;
+}
+```
+
+使用枚举：
+```
+根据当前值获取枚举项：Enum.TryParse(strStatus, true, out EnumStatus status);
 ```
 
 密码生成器代码片段：
@@ -146,4 +170,28 @@ public enum PasswordType
     Default,
     Stronger
 }
+```
+
+获取应用程序目录：
+
+```
+string path = "";
+
+//获取和设置当前目录（即该进程从中启动的目录）的完全限定路径。 结果:E:\项目\Test
+path = Environment.CurrentDirectory;
+
+// 获取程序的基目录。结果：E:\项目\Test\
+path = System.AppDomain.CurrentDomain.BaseDirectory;
+
+// 获取和设置当前目录(该进程从中启动的目录)的完全限定目录。 结果：E:\项目\Test
+path = System.Environment.CurrentDirectory ;
+
+// 获取应用程序的当前工作目录，注意工作目录是可以改变的，而不限定在程序所在目录。 结果：E:\项目\Test
+path = System.IO.Directory.GetCurrentDirectory();
+
+// 获取和设置包括该应用程序的目录的名称。 结果：E:\项目\Test\
+path = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
+
+//获取项目下的Log文件路径 结果：E:\项目\Test\Log
+path = System.Web.HttpContext.Current.Server.MapPath("~/Log");
 ```

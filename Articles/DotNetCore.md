@@ -10,6 +10,10 @@
 技术点：EF Core官方技术文档。
 ```
 
+[github .NET Core Community](https://github.com/dotnetcore)
+
+[dotnetcore docs CAP](https://github.com/dotnetcore/CAP)
+
 [Microsoft.AspNetCore.Authentication.OAuth](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.OAuth/)
 ```
 技术点：ASP.NET Core 身份认证中间件;
