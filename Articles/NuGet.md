@@ -4,6 +4,7 @@
 ```
 在解决方案，打开编辑.csproj文件：
 <PropertyGroup>
+    <PackageId>xxx.xxx</PackageId>
     <Version>1.0.0</Version>
     <Authors>yibi chen</Authors>
     <Company>yibi chen</Company>

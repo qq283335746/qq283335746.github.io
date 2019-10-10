@@ -10,6 +10,8 @@
 技术点：EF Core官方技术文档。
 ```
 
+[现代 ASP.NET Web 应用程序电子书](https://docs.microsoft.com/zh-cn/dotnet/architecture/modern-web-apps-azure/)
+
 [github .NET Core Community](https://github.com/dotnetcore)
 
 [dotnetcore docs CAP](https://github.com/dotnetcore/CAP)
@@ -115,6 +117,25 @@ using (var rng = RandomNumberGenerator.Create())
 [List of ASP.NET Web API and HttpClient Samples](https://devblogs.microsoft.com/aspnet/list-of-asp-net-web-api-and-httpclient-samples/)
 
 [ASP.NET Core Dependency Injection Deep Dive](https://joonasw.net/view/aspnet-core-di-deep-dive)
+
+[ASP.NET Core 2.2 - SMTP EmailSender Implementation](https://kenhaggerty.com/articles/article/aspnet-core-22-smtp-emailsender-implementation)
+
+[SendGrid使用方法](http://blog.sina.com.cn/s/blog_517206ba01015o8x.html)
+
+asp.net core 以编程方式发送电子邮件
+```
+1、SendGrid
+2、MailKit and MimeKit
+```
+
+[Logging to a file in .Net Core](https://www.codeproject.com/Articles/4049519/Speed-up-ASP-NET-Core-WEB-API-application-Part-3)
+
+
+asp.net core 日志记录
+```
+第三方：Serilog.Extensions.Logging.File
+
+``` 
 
 .Net Core依赖注入代码片段集锦：
 ```

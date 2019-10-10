@@ -1,4 +1,4 @@
-# C#/.NET编程进阶
+# C#/.NET编程
 
 [欢迎使用 .NET](https://docs.microsoft.com/zh-cn/dotnet/welcome)
 
