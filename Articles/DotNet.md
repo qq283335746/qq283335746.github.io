@@ -81,6 +81,37 @@ services.AddMvc(opts=> {
 
 ```
 
+System.Threading.Timer和System.Timers.Timer执行异步方法：
+```
+//System.Threading.Timer
+var timer = new System.Threading.Timer(async (e) =>
+{
+    await RunAsync();
+
+}, null, TimeSpan.Zero,TimeSpan.FromSeconds(5));
+
+//System.Timers.Timer
+var _timer2 = new System.Timers.Timer(3000)
+{
+    AutoReset = true
+};
+_timer2.Elapsed += new ElapsedEventHandler(OnTimedEvent);
+_timer2.Start();
+
+private async Task RunAsync()
+{
+    await Task.Delay(1000);
+
+    //do...
+}
+
+private async void OnTimedEvent(Object source, ElapsedEventArgs e)
+{
+    //do...
+    Console.WriteLine(DateTime.Now.ToString("HH:mm:ss"));
+}
+```
+
 多线程代码片段：
 ```
 var t1 = new Thread(() =>

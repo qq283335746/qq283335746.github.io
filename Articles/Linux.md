@@ -8,6 +8,9 @@
 查看进程ID相关操作：
 列出占用端口的进程ID: sudo netstat -antup 
 
+查看服务日志：
+sudo journalctl -fu consul.service
+
 Linux wget 下载：
 sudo wget https://vscode-update.azurewebsites.net/latest/linux-deb-x64/stable -O /tmp/code_latest_amd64.deb
 sudo dpkg -i /tmp/code_latest_amd64.deb
