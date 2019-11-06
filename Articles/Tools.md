@@ -11,6 +11,10 @@
 
 [什么是 Visual Studio Live Share？](https://docs.microsoft.com/zh-cn/visualstudio/liveshare/)
 
+[Visual Studio Online](https://visualstudio.microsoft.com/zh-hans/services/visual-studio-online/)
+
+[Visual Studio Code Remote Development]()
+
 安装密钥：
 ```
 Visual Studio 2019 企业版：

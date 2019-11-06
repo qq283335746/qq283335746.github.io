@@ -8,6 +8,9 @@
 查看进程ID相关操作：
 列出占用端口的进程ID: sudo netstat -antup 
 
+systemctl操作应用的服务：
+sudo systemctl start/stop/restart/status consul.service
+
 查看服务日志：
 sudo journalctl -fu consul.service
 
