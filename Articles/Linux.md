@@ -1,5 +1,7 @@
 # Linux开发人员宝典
 
+[ubuntu16 环境配置](https://cloud.tencent.com/developer/article/1342775)
+
 开发人员常用命令：
 ```
 查看端口相关操作：

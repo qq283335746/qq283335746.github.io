@@ -139,6 +139,31 @@ private long ToUnixDateTime(DateTime dateTime)
 使用枚举：
 ```
 根据当前值获取枚举项：Enum.TryParse(strStatus, true, out EnumStatus status);
+
+get enum description:
+
+public static string ToDescription<TEnum>(this TEnum EnumValue) where TEnum : struct
+{
+    return GetEnumDescription((Enum)(object)((TEnum)EnumValue));
+}
+
+public static string GetEnumDescription(Enum value)
+{
+    var fi = value.GetType().GetField(value.ToString());
+
+    var attributes = fi.GetCustomAttributes(typeof(DescriptionAttribute), false) as DescriptionAttribute[];
+
+    if (attributes != null && attributes.Any())
+    {
+        return attributes.First().Description;
+    }
+
+    return value.ToString();
+}
+
+use like:  
+var descr = MyEnum.ToDescription();
+
 ```
 
 密码生成器代码片段：

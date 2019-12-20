@@ -46,6 +46,9 @@ retry_join=["xx.xxx.x.57"]
 
 [consul ui官方](https://learn.hashicorp.com/consul/getting-started/ui)
 
+[consul负载均衡-官方 Load Balancing Strategies for Consul](https://www.hashicorp.com/blog/load-balancing-strategies-for-consul/)
+
 [注册中心 Consul 使用详解（含服务注册与发现比较）](http://www.360linker.com/wfw/657.jhtml)
 
+[Consul负载均衡策略](https://juejin.im/post/5be4073df265da613b6f450a)
 

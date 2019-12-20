@@ -18,6 +18,8 @@
 
 [ionic cordova build](https://ionicframework.com/docs/cli/commands/cordova-build)
 
+[Getting Started With Ionic 4, Angular And .NET Core 3](https://www.c-sharpcorner.com/article/getting-started-with-ionic-framework-angular-and-net-core-3/)
+
 Ionic常用命令：
 ```
 npm install -g cordova ionic

@@ -10,6 +10,11 @@
 技术点：EF Core官方技术文档。
 ```
 
+[Azure 体系结构中心](https://docs.microsoft.com/zh-cn/azure/architecture/)
+```
+应用程序体系结构指南、云设计模式、云采用框架等等
+```
+
 [现代 ASP.NET Web 应用程序电子书](https://docs.microsoft.com/zh-cn/dotnet/architecture/modern-web-apps-azure/)
 
 [github .NET Core Community](https://github.com/dotnetcore)
@@ -172,6 +177,13 @@ public void Configure(IApplicationBuilder app)
 
 IServiceProvider provider：
 provider.CreateScope().ServiceProvider.GetServices(typeof(IStudentService));
+
+//Accept有效而Content-Type无效
+services.AddHttpClient(HttpClientNames.DingtalkClient, client =>
+{
+    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+    client.DefaultRequestHeaders.TryAddWithoutValidation("Content-Type", "application/json");
+});
 ```
 .net core跨域设置代码片段：
 ```
@@ -200,4 +212,9 @@ public IServiceProvider ConfigureServices(IServiceCollection services)
 public class AuthenticationController{
     
 }
+```
+
+asp.net core razor:
+```
+使用@: 或 <text> 可在c#代码中写js代码。
 ```
