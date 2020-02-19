@@ -1,5 +1,7 @@
 # DotNetCore技术集锦
 
+[.NET Core 指南](https://docs.microsoft.com/zh-cn/dotnet/core/)
+
 [ASP.NET Core官方技术文档参考](https://docs.microsoft.com/zh-cn/aspnet/core/security/?view=aspnetcore-2.2)
 ```
 技术点：ASP.NET Core官方技术文档。
