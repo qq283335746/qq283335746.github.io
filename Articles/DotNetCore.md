@@ -87,7 +87,7 @@ using (var rng = RandomNumberGenerator.Create())
 
 [Microsoft.AspNetCore.DataProtection-示例0001](https://stackoverflow.com/questions/38795103/encrypt-string-in-net-core)
 ```
-技术点：.net core数据保护、加解密
+技术点：.net core数据保护、加解密；使用redis的数据保护包：Microsoft.AspNetCore.DataProtection.StackExchangeRedis
 ```
 
 [Open-Source Service Discovery](http://jasonwilder.com/blog/2014/02/04/service-discovery-in-the-cloud/)
