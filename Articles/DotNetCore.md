@@ -17,6 +17,12 @@
 应用程序体系结构指南、云设计模式、云采用框架等等
 ```
 
+[NLog官网](https://nlog-project.org/)
+[NLog.Extensions.Logging - NLog provider for Microsoft.Extensions.Logging](https://github.com/NLog/NLog.Extensions.Logging)
+[NLog Targes:like LiteDB、MongoDB](https://nlog-project.org/config/?tab=targets)
+
+[学习.net/c#优秀博客](https://www.strathweb.com/)
+
 [从控制器操作名称中剪裁的异步后缀，即方法GetAllAsync，请求应是GetAll](https://docs.microsoft.com/zh-cn/dotnet/core/compatibility/2.2-3.0)
 
 [现代 ASP.NET Web 应用程序电子书](https://docs.microsoft.com/zh-cn/dotnet/architecture/modern-web-apps-azure/)
