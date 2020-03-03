@@ -17,6 +17,8 @@
 应用程序体系结构指南、云设计模式、云采用框架等等
 ```
 
+[从控制器操作名称中剪裁的异步后缀，即方法GetAllAsync，请求应是GetAll](https://docs.microsoft.com/zh-cn/dotnet/core/compatibility/2.2-3.0)
+
 [现代 ASP.NET Web 应用程序电子书](https://docs.microsoft.com/zh-cn/dotnet/architecture/modern-web-apps-azure/)
 
 [github .NET Core Community](https://github.com/dotnetcore)
