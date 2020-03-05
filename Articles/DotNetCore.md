@@ -152,6 +152,9 @@ asp.net core 日志记录
 
 ``` 
 
+创建一个CancellationToken：var cancellationToken = default(CancellationToken);
+
+
 .Net Core依赖注入代码片段集锦：
 ```
 public static void Main(string[] args)
