@@ -2,7 +2,7 @@
 
 [.NET Core 指南](https://docs.microsoft.com/zh-cn/dotnet/core/)
 
-[ASP.NET Core官方技术文档参考](https://docs.microsoft.com/zh-cn/aspnet/core/security/?view=aspnetcore-2.2)
+[ASP.NET Core官方技术文档参考](https://docs.microsoft.com/zh-cn/aspnet/core/?view=aspnetcore-3.1)
 ```
 技术点：ASP.NET Core官方技术文档。
 ```
@@ -12,10 +12,16 @@
 技术点：EF Core官方技术文档。
 ```
 
+[Microsoft Docs](https://docs.microsoft.com/zh-cn/)
+
 [Azure 体系结构中心](https://docs.microsoft.com/zh-cn/azure/architecture/)
 ```
 应用程序体系结构指南、云设计模式、云采用框架等等
 ```
+
+[.NET 中的序列化](https://docs.microsoft.com/zh-cn/dotnet/standard/serialization/)
+
+[Creating a rolling file logging provider for ASP.NET Core 2.0](https://andrewlock.net/creating-a-rolling-file-logging-provider-for-asp-net-core-2-0/)
 
 [NLog官网](https://nlog-project.org/)
 [NLog.Extensions.Logging - NLog provider for Microsoft.Extensions.Logging](https://github.com/NLog/NLog.Extensions.Logging)

@@ -138,7 +138,9 @@ private long ToUnixDateTime(DateTime dateTime)
 
 使用枚举：
 ```
-根据当前值获取枚举项：Enum.TryParse(strStatus, true, out EnumStatus status);
+根据当前值获取枚举项：
+Enum.TryParse(strStatus, true, out EnumStatus status);
+(PasswordFormatOptions)entity.PasswordFormat
 
 get enum description:
 
