@@ -1,5 +1,7 @@
 # Linux开发人员宝典
 
+[ubuntu阿里云快速下载](http://mirrors.aliyun.com/ubuntu-releases/18.04/)
+
 [ubuntu16 环境配置](https://cloud.tencent.com/developer/article/1342775)
 
 开发人员常用命令：

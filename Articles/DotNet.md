@@ -81,6 +81,10 @@ services.AddMvc(opts=> {
 
 ```
 
+c#
+```
+声明一个decimal并赋值：var price = 0.00m;
+```
 System.Threading.Timer和System.Timers.Timer执行异步方法：
 ```
 //System.Threading.Timer

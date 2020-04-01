@@ -4,6 +4,8 @@
 
 [Redis on Windows](https://github.com/microsoftarchive/redis/releases)
 
+[安装Chocolatey Redis 包并安装redis](https://chocolatey.org/packages/redis-64/)
+
 一、环境搭建
 ```
 当前使用系统：Ubuntu18.04
@@ -39,6 +41,8 @@ Stackexchange.redis
 ```
 
 [分布式缓存在 ASP.NET Core 中](https://docs.microsoft.com/zh-cn/aspnet/core/performance/caching/distributed?view=aspnetcore-2.2)
+
+[ASP.NET Core 中的分布式缓存](https://docs.microsoft.com/zh-cn/aspnet/core/performance/caching/distributed?view=aspnetcore-3.1)
 
 [Redis命令、教程等](http://www.redis.net.cn/order/3662.html)
 

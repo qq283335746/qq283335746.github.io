@@ -40,3 +40,8 @@ GitHub中README.md添加图片方式：
 如GitHub有个My仓库master主分支下有目录及文件：BaoAnQuZhongXinYiYuan/jianyanbaogaodan004.jpg，则在.md文档引用该文件地址应是：
 ![image](https://github.com/qq283335746/My/raw/master/MyImages/BaoAnQuZhongXinYiYuan/jianyanbaogaodan004.jpg)，注意：blob应改为raw。
 ```
+
+搭建自己的git源码管理：gitea
+
+git常用命令：
+更改git账号：git config --global user.name "Your_username" git config --global user.email "Your_email"
