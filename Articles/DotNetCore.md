@@ -14,10 +14,14 @@
 
 [Microsoft Docs](https://docs.microsoft.com/zh-cn/)
 
+[.NET Core 和 .NET Standard 中的单元测试](https://docs.microsoft.com/zh-cn/dotnet/core/testing/)
+
 [Azure 体系结构中心](https://docs.microsoft.com/zh-cn/azure/architecture/)
 ```
 应用程序体系结构指南、云设计模式、云采用框架等等
 ```
+
+[在视觉工作室安装 FxCop 分析仪](https://docs.microsoft.com/zh-cn/visualstudio/code-quality/install-fxcop-analyzers?view=vs-2019)
 
 [.NET 中的序列化](https://docs.microsoft.com/zh-cn/dotnet/standard/serialization/)
 
