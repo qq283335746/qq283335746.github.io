@@ -26,6 +26,8 @@
 
 [C#中的多线程 - 高级多线程](https://blog.gkarch.com/threading/part4.html)
 
+[最大限度地降低多线程 C# 代码的复杂性](https://docs.microsoft.com/zh-cn/archive/msdn-magazine/2019/february/csharp-minimize-complexity-in-multithreaded-csharp-code)
+
 [Implementing the Singleton Pattern in C#](https://csharpindepth.com/articles/Singleton)
 ```
 导读：c#实现单例的6种模式

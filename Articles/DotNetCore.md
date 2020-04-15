@@ -241,3 +241,14 @@ asp.net core razor:
 ```
 使用@: 或 <text> 可在c#代码中写js代码。
 ```
+asp.net core IEndpointRouteBuilder 扩展示例
+```
+public static void MapOldParkingApiRoutes(this IEndpointRouteBuilder endpoints)
+{
+    endpoints.MapControllerRoute(
+        name: Routes.OldParkingApiRouteName,
+        pattern: "{[a-Z]}/openapi/v99999/parking/{action}",
+        defaults: new { controller = "ParkingApi", action = "{action}" });
+}
+```
+
