@@ -13,7 +13,9 @@
 
 [Visual Studio Online](https://visualstudio.microsoft.com/zh-hans/services/visual-studio-online/)
 
-[Visual Studio Code Remote Development]()
+[Code Compare - TortoiseGit DiffMerge Tool](https://www.devart.com/codecompare/)
+
+[Code Compare Integration with TortoiseGit](https://www.devart.com/codecompare/integration_tortoisegit.html)
 
 安装密钥：
 ```
@@ -44,4 +46,6 @@ GitHub中README.md添加图片方式：
 搭建自己的git源码管理：gitea
 
 git常用命令：
-更改git账号：git config --global user.name "Your_username" git config --global user.email "Your_email"
+更改git账号：
+git config --global user.name "Your_username" 
+git config --global user.email "Your_email"

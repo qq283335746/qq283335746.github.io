@@ -6,6 +6,8 @@
 
 [LiteDB github](https://github.com/mbdavid/LiteDB)
 
+[LiteDB开发示例文档](https://github.com/mbdavid/LiteDB/wiki/Getting-Started)
+
 SQLite + SpatiaLite、PostgreSQL + PostGIS
 
 [Install MongoDB](https://docs.mongodb.com/manual/installation/)
