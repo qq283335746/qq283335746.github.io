@@ -39,6 +39,12 @@
 
 [github .NET Core Community](https://github.com/dotnetcore)
 
+[.NET Core Dependency Injection - One Interface, Multiple Implementations](https://www.c-sharpcorner.com/article/net-core-dependency-injection-one-interface-multiple-implementation/)
+
+[Dependency Injection with Multiple Implementations in ASP.NET Core](https://edi.wang/post/2018/12/28/dependency-injection-with-multiple-implementations-in-aspnet-core)
+
+[Registering multiple implementations of the same interface in ASP.NET Core](https://dejanstojanovic.net/aspnet/2018/december/registering-multiple-implementations-of-the-same-interface-in-aspnet-core/)
+
 [dotnetcore docs CAP](https://github.com/dotnetcore/CAP)
 
 [Microsoft.AspNetCore.Authentication.OAuth](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.OAuth/)
