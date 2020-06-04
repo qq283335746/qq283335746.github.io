@@ -17,6 +17,10 @@
 
 [Code Compare Integration with TortoiseGit](https://www.devart.com/codecompare/integration_tortoisegit.html)
 
+[WinSCP-File Manager（FTP, FTPS, SCP, SFTP, WebDAV）](https://winscp.net/eng/download.php)
+
+[JSON转C#实体类](https://www.bejson.com/convert/json2csharp/)
+
 安装密钥：
 ```
 Visual Studio 2019 企业版：

@@ -1,5 +1,20 @@
 # Windows开发人员宝典
 
+[windows服务器管理](https://docs.microsoft.com/zh-cn/windows-server/administration/manage-windows-server)
+[About Remote Troubleshooting](https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-7)
+[PowerShell下载](https://github.com/PowerShell/PowerShell/releases/tag/v7.0.1)
+[什么是 PowerShell？](https://docs.microsoft.com/zh-cn/powershell/scripting/overview?view=powershell-7)
+```
+Enable-PSRemoting
+winrm quickconfig
+
+失败：
+about_Remote_Troubleshooting
+Set-Item WSMan:\localhost\Client\TrustedHosts -Value *
+Enter-PSSession -computer 120.24.35.134
+Enter-PSSession 120.24.35.134 -Credential abc\administrator
+```
+
 [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/zh-cn/windows/wsl/about)
 ```
 技术点：了解适用于 Linux 的 Windows 子系统运行
@@ -10,3 +25,15 @@ Windows ADK:
 WinPE:
 显示命令窗口后，将运行 wpeinit 命令，它可以设置系统。这可能需要几分钟。
 ```
+
+windows 命令行：
+```
+查看端口：netstat-a
+开启端口：
+rem Open TCP Port 80 inbound and outbound
+netsh advfirewall firewall add rule name="Zoo TCP Port 80" dir=in action=allow protocol=TCP localport=80
+netsh advfirewall firewall add rule name="Zoo TCP Port 80" dir=out action=allow protocol=TCP localport=80
+```
+
+[Windows Server 文档](https://docs.microsoft.com/zh-cn/windows-server/)
+[阿里云ECS Windows Server2012使用powershell安装IIS的方法](http://www.023dns.com/server_ECS/1560.html)
