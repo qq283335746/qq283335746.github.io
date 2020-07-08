@@ -10,13 +10,18 @@
 [什么是 PowerShell？](https://docs.microsoft.com/zh-cn/powershell/scripting/overview?view=powershell-7)
 ```
 Enable-PSRemoting
-winrm quickconfig
+winrm quickconfig --新购买的阿里云ECS启用windows admin center(WAC)进行管理时需执行此命令，执行后即可使用WAC远程。
 
 失败：
 about_Remote_Troubleshooting
 Set-Item WSMan:\localhost\Client\TrustedHosts -Value *
 Enter-PSSession -computer 120.24.35.134
 Enter-PSSession 120.24.35.134 -Credential abc\administrator
+```
+
+使用windows admin center（WAC）管理计算机：
+```
+WAC连接阿里云ECS需开启端口：5985、5986 
 ```
 
 [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/zh-cn/windows/wsl/about)

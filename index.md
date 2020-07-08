@@ -74,6 +74,11 @@
 导读：移动开发（Xamarin）
 ```
 
+[Entity Framework Core](./Articles/EFCore)
+```
+导读：EF Core 开发指南、示例、常见问题集锦
+```
+
 [数据库](./Articles/Db)
 ```
 导读：数据库系列
@@ -101,6 +106,12 @@
 
 ```
 导读：关于MongoDB的使用与问题集锦
+```
+
+[VSCode](./Articles/VSCode)
+
+```
+导读：关于visual studio code 使用
 ```
 
 [Linux](./Articles/Linux)

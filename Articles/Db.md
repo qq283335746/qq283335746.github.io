@@ -1,5 +1,8 @@
 # 数据库技术集锦
 
+[DBConvert Studio 多数据库管理工具](https://dbconvert.com/download/)
+[Navicat Premium 多数据库管理工具](https://www.navicat.com/en/products/navicat-premium)
+
 [LiteDB(Embedded NoSQL database for .NET)](http://www.litedb.org/)
 
 [LiteDBViewer(LiteDB数据库管理客户端)](https://github.com/falahati/LiteDBViewer)

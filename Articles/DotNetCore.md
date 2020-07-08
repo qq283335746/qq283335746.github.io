@@ -47,6 +47,14 @@
 
 [dotnetcore docs CAP](https://github.com/dotnetcore/CAP)
 
+asp.net core 部署至windows：
+```
+第一步：下载并安装.net core sdk，使用浏览器访问 https://dotnet.microsoft.com/download
+第二步：下载并安装，使用浏览器访问 https://download.visualstudio.microsoft.com/download/pr/5bed16f2-fd1a-4027-bee3-3d6a1b5844cc/dd22ca2820fadb57fd5378e1763d27cd/dotnet-hosting-3.1.4-win.exe
+
+将 ASP.NET Core 应用发布到 IIS：https://docs.microsoft.com/zh-cn/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&tabs=visual-studio
+```
+
 [Microsoft.AspNetCore.Authentication.OAuth](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.OAuth/)
 ```
 技术点：ASP.NET Core 身份认证中间件;
@@ -106,6 +114,15 @@ byte[] salt = new byte[128 / 8];
 using (var rng = RandomNumberGenerator.Create())
 {
     rng.GetBytes(salt);
+}
+
+//利用redis生成唯一的订单号
+public async Task<string> GenerateOrderCodeAsync(string key,string prefix)
+{
+    if (string.IsNullOrEmpty(prefix)) prefix = "1";
+    var value = await Db.StringIncrementAsync(key);
+
+    return $"{prefix}{value.ToString().PadLeft(9,'0')}";
 }
 ```
 
