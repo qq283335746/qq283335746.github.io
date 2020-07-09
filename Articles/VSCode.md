@@ -2,6 +2,8 @@
 
 [Remote Development using SSH -官方](https://code.visualstudio.com/docs/remote/ssh)
 
+[Visual Studio 调试程序文档](https://docs.microsoft.com/zh-cn/visualstudio/debugger/?view=vs-2019)
+
 [VSCode使用Remote-SSH免密码登陆远程服务器](https://www.cnblogs.com/pzzrudlf/articles/12287162.html)
 
 vscode Remote-SSH：
@@ -16,7 +18,8 @@ vscode Remote-SSH：
 2、生成后上传至服务器： ssh-copy-id root@ip
 3、修改c:\Users\cimc\.ssh\config配置文件，添加如下配置节：
 PubkeyAuthentication yes
-IdentityFile "c:\Users\cimc\.ssh\id_rsa"
+IdentityFile ~/.ssh/id_rsa
+--IdentityFile  "c:\Users\cimc\.ssh\id_rsa"
 完毕！
 
 教程：
