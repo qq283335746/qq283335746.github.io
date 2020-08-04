@@ -2,15 +2,9 @@
 
 [.NET Core 指南](https://docs.microsoft.com/zh-cn/dotnet/core/)
 
-[ASP.NET Core官方技术文档参考](https://docs.microsoft.com/zh-cn/aspnet/core/?view=aspnetcore-3.1)
-```
-技术点：ASP.NET Core官方技术文档。
-```
+[ASP.NET Core官方文档](https://docs.microsoft.com/zh-cn/aspnet/core/?view=aspnetcore-3.1)
 
-[EF Core文档](https://docs.microsoft.com/zh-cn/ef/#pivot=efcore)
-```
-技术点：EF Core官方技术文档。
-```
+[EF Core官方文档](https://docs.microsoft.com/zh-cn/ef/#pivot=efcore)
 
 [Microsoft Docs](https://docs.microsoft.com/zh-cn/)
 
@@ -21,15 +15,33 @@
 应用程序体系结构指南、云设计模式、云采用框架等等
 ```
 
+[Orchard Core- DI中多租户的推荐模式](https://github.com/OrchardCMS/OrchardCore)
+
 [在视觉工作室安装 FxCop 分析仪](https://docs.microsoft.com/zh-cn/visualstudio/code-quality/install-fxcop-analyzers?view=vs-2019)
 
 [.NET 中的序列化](https://docs.microsoft.com/zh-cn/dotnet/standard/serialization/)
 
 [Creating a rolling file logging provider for ASP.NET Core 2.0](https://andrewlock.net/creating-a-rolling-file-logging-provider-for-asp-net-core-2-0/)
 
+[serilog日志写到文件-serilog-sinks-file](https://github.com/serilog/serilog-sinks-file)
+
+[serilog日志配置参数-serilog-settings-configuration](https://github.com/serilog/serilog-settings-configuration)
+
 [NLog官网](https://nlog-project.org/)
+
 [NLog.Extensions.Logging - NLog provider for Microsoft.Extensions.Logging](https://github.com/NLog/NLog.Extensions.Logging)
+
 [NLog Targes:like LiteDB、MongoDB](https://nlog-project.org/config/?tab=targets)
+
+[How to Write a Custom Logging Provider in ASP.NET Core](https://www.codeproject.com/Articles/1556475/How-to-Write-a-Custom-Logging-Provider-in-ASP-NET)
+
+[Logging to a file in .Net Core](https://www.codeproject.com/Articles/4049519/Speed-up-ASP-NET-Core-WEB-API-application-Part-3)
+
+asp.net core 日志记录
+```
+Serilog.Extensions.Logging.File、NLog、log4net
+
+``` 
 
 [学习.net/c#优秀博客](https://www.strathweb.com/)
 
@@ -175,15 +187,6 @@ asp.net core 以编程方式发送电子邮件
 1、SendGrid
 2、MailKit and MimeKit
 ```
-
-[Logging to a file in .Net Core](https://www.codeproject.com/Articles/4049519/Speed-up-ASP-NET-Core-WEB-API-application-Part-3)
-
-
-asp.net core 日志记录
-```
-第三方：Serilog.Extensions.Logging.File
-
-``` 
 
 创建一个CancellationToken：var cancellationToken = default(CancellationToken);
 

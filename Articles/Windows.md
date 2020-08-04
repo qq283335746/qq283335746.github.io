@@ -1,5 +1,6 @@
 # Windows开发人员宝典
 
+[如何：安装和卸载 Windows 服务](https://docs.microsoft.com/zh-cn/dotnet/framework/windows-services/how-to-install-and-uninstall-services)
 [Windows Server 文档](https://docs.microsoft.com/zh-cn/windows-server/)
 [阿里云-Windows Server2012使用powershell安装IIS的方法](http://www.023dns.com/server_ECS/1560.html)
 [阿里云-Windows Server半年渠道镜像与实例管理](https://help.aliyun.com/document_detail/113063.html?spm=a2c4g.11186623.2.13.3fda4c07dCFd0I)

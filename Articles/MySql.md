@@ -25,6 +25,9 @@ mysql -u root -p
 show databases; 
 use mysql;
 show tables;
+
+safe-updates 模式下，无法执行update和delete 解决：
+预先把这个模式关掉即可：SET SQL_SAFE_UPDATES=0;
 ```
 
 二、客户端工具
@@ -36,3 +39,17 @@ show tables;
 三、相关链接
 
 [What is the best MySQL client for Mac OS X or Windows?](https://www.quora.com/What-is-the-best-MySQL-client-for-Mac-OS-X-or-Windows)
+
+mysql开发常用代码
+```
+mysql启用事务：
+using (MySqlConnection connection = new MySqlConnection(yourConnString))
+{
+    if (connection.State != System.Data.ConnectionState.Open) connection.Open();
+    using (MySqlTransaction transaction = connection.BeginTransaction())
+    {
+        //...
+    }
+}
+    
+```

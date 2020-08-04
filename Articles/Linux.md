@@ -32,6 +32,8 @@ sudo vi ssh_config
 查看进程ID相关操作：
 列出占用端口的进程ID: sudo netstat -antup 
 
+查看磁盘空闲情况：df -a
+
 systemctl操作应用的服务：
 sudo systemctl start/stop/restart/status consul.service
 
