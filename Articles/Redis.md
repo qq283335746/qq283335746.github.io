@@ -1,10 +1,14 @@
 # 分布式架构之Redis
 
+[redis Download](https://redis.io/download)
+
 [示例源码](https://github.com/qq283335746/Yibi/tree/master/Src/Yibi/Cache) <br /><br />
 
 [Redis on Windows](https://github.com/microsoftarchive/redis/releases)
 
 [安装Chocolatey Redis 包并安装redis](https://chocolatey.org/packages/redis-64/)
+
+[How To Install and Secure Redis on CentOS 7](https://www.digitalocean.com/community/tutorials/how-to-install-secure-redis-centos-7)
 
 一、环境搭建
 ```

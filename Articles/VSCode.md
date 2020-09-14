@@ -1,8 +1,14 @@
 # Visual Studio Code
 
+[Visual Studio Live Share 介绍 -官方](https://docs.microsoft.com/zh-cn/visualstudio/liveshare/)
+
 [Remote Development using SSH -官方](https://code.visualstudio.com/docs/remote/ssh)
 
 [Visual Studio 调试程序文档](https://docs.microsoft.com/zh-cn/visualstudio/debugger/?view=vs-2019)
+
+[Java in Visual Studio Code](https://code.visualstudio.com/docs/languages/java)
+
+[Getting Started with Java in VS Code](https://code.visualstudio.com/docs/java/java-tutorial)
 
 [VSCode使用Remote-SSH免密码登陆远程服务器](https://www.cnblogs.com/pzzrudlf/articles/12287162.html)
 

@@ -2,6 +2,18 @@
 
 [如何：安装和卸载 Windows 服务](https://docs.microsoft.com/zh-cn/dotnet/framework/windows-services/how-to-install-and-uninstall-services)
 [Windows Server 文档](https://docs.microsoft.com/zh-cn/windows-server/)
+
+[在 DNS 客户端上禁用 DNS 客户端缓存](https://docs.microsoft.com/zh-cn/windows-server/networking/dns/troubleshoot/disable-dns-client-side-caching)
+
+[Clearing Your IP Cache on your local Computer](https://customercenter.karthost.com/knowledgebase.php?action=displayarticle&id=70#:~:text=%20%20%201%20You%20will%20need%20to,local%20machine.%20By%20using%20the%20Command...%20More%20)
+
+[Stop and Start Windows DNS Cache, when “ipconfig /flushdns” not working](https://shellcreeper.com/stop-and-start-windows-dns-cache-when-ipconfig-flushdns-not-working/)
+
+```
+1、ipconfig /flushdns 2、ping tester.cimcparking.com 3、ipconfig /displaydns（显示） 4、net stop dnscache 5、net start dnscache 
+
+```
+
 [阿里云-Windows Server2012使用powershell安装IIS的方法](http://www.023dns.com/server_ECS/1560.html)
 [阿里云-Windows Server半年渠道镜像与实例管理](https://help.aliyun.com/document_detail/113063.html?spm=a2c4g.11186623.2.13.3fda4c07dCFd0I)
 

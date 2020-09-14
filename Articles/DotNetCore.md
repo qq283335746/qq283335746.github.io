@@ -15,6 +15,8 @@
 应用程序体系结构指南、云设计模式、云采用框架等等
 ```
 
+[Global Error Handling in ASP.NET Core Web API](https://code-maze.com/global-error-handling-aspnetcore/)
+
 [Orchard Core- DI中多租户的推荐模式](https://github.com/OrchardCMS/OrchardCore)
 
 [在视觉工作室安装 FxCop 分析仪](https://docs.microsoft.com/zh-cn/visualstudio/code-quality/install-fxcop-analyzers?view=vs-2019)

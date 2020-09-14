@@ -40,6 +40,18 @@ safe-updates 模式下，无法执行update和delete 解决：
 
 [What is the best MySQL client for Mac OS X or Windows?](https://www.quora.com/What-is-the-best-MySQL-client-for-Mac-OS-X-or-Windows)
 
+MySQL：
+
+```
+修改字段类型：
+ALTER TABLE `YourDb`.`YourTable` 
+CHANGE COLUMN `YourColumn` `YourColumn` CHAR(36)  not null
+
+创建索引：
+alter table `YourDb`.`YourTable` add index Index_OrderCode(`OrderCode`);
+
+```
+
 mysql开发常用代码
 ```
 mysql启用事务：

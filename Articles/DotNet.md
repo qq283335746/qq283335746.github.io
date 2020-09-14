@@ -4,7 +4,17 @@
 
 [C# 文档](https://docs.microsoft.com/zh-cn/dotnet/csharp/)
 
+[.NET 文档](https://docs.microsoft.com/zh-cn/dotnet/)
+
 [欢迎使用 .NET](https://docs.microsoft.com/zh-cn/dotnet/welcome)
+
+[.NET 基础知识](https://docs.microsoft.com/zh-cn/dotnet/fundamentals/)
+
+[System.Threading Namespace](https://docs.microsoft.com/zh-cn/dotnet/api/system.threading?view=netcore-3.1)
+
+[System.Xml.Serialization Namespace](https://docs.microsoft.com/zh-cn/dotnet/api/system.xml.serialization?view=netcore-3.1)
+
+[XML Serialization and Deserialization: Part 2](https://www.codeproject.com/articles/487571/xml-serialization-and-deserialization-part-2)
 
 [异步编程](https://docs.microsoft.com/zh-cn/dotnet/csharp/async)
 
@@ -132,6 +142,17 @@ t1.Start();
 
 var t6 = new Thread(new ThreadStart(RunTimer6));
 t6.Start();
+
+异步代码中使用同步：
+private readonly SemaphoreSlim _updateLock = new SemaphoreSlim(1, 1);
+try{
+    await _updateLock.WaitAsync();
+}
+finally
+{
+    _updateLock.Release();
+}
+
 ```
 
 DateTime Local to DateTime Utc 时间戳：
