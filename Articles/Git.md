@@ -3,6 +3,8 @@
 导读：git开发使用技术、github pages相关技术等
 ```
 
+[A collection of .gitignore templates](https://github.com/github/gitignore)
+
 [github pages帮助文档-中文](https://help.github.com/cn)
 
 [Git 备忘清单 -中文](https://github.github.com/training-kit/downloads/zh_CN/github-git-cheat-sheet/)

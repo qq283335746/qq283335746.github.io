@@ -1,5 +1,7 @@
 # Linux开发人员宝典
 
+[适用于 Linux 的 Windows 子系统文档](https://docs.microsoft.com/zh-cn/windows/wsl/)
+
 [SecureCRT-linux远程工具](https://www.vandyke.com/cgi-bin/releases.php?product=securecrt)
 
 [WinSCP-linux文件管理工具](https://winscp.net/eng/download.php)
