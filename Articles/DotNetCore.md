@@ -53,6 +53,8 @@ Serilog.Extensions.Logging.File、NLog、log4net
 
 [github .NET Core Community](https://github.com/dotnetcore)
 
+[Simplifying dependency injection for IConfigureOptions with the ConfigureOptions() helper](https://andrewlock.net/simplifying-dependency-injection-for-iconfigureoptions-with-the-configureoptions-helper/)
+
 [.NET Core Dependency Injection - One Interface, Multiple Implementations](https://www.c-sharpcorner.com/article/net-core-dependency-injection-one-interface-multiple-implementation/)
 
 [Dependency Injection with Multiple Implementations in ASP.NET Core](https://edi.wang/post/2018/12/28/dependency-injection-with-multiple-implementations-in-aspnet-core)

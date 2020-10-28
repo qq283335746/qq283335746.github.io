@@ -45,4 +45,7 @@ sudo journalctl -fu consul.service
 Linux wget 下载：
 sudo wget https://vscode-update.azurewebsites.net/latest/linux-deb-x64/stable -O /tmp/code_latest_amd64.deb
 sudo dpkg -i /tmp/code_latest_amd64.deb
+
+测试端口：
+telnet xxx.xxx.xx.xx 5000 
 ```

@@ -12,6 +12,7 @@
 
 [VSCode使用Remote-SSH免密码登陆远程服务器](https://www.cnblogs.com/pzzrudlf/articles/12287162.html)
 
+```
 vscode Remote-SSH：
 1、点击左下角><图标
 2、Remote-SSH Connect to Host
@@ -33,5 +34,12 @@ IdentityFile ~/.ssh/id_rsa
 cd ~/.ssh
 ssh-keygen
 ssh-copy-id root@ip
+
+vscode+java：
+（ctrl+shift+p）Java: Clean the Java language server workspace
+常用插件：springboot + Lombok
+
+vscode控制台清屏：Terminal: Clear
+```
 
 

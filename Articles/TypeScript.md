@@ -11,3 +11,5 @@
 ```
 导读：angular前端+node后端+HttpClient
 ```
+
+[关于获取url的querystring](https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript)

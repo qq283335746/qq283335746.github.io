@@ -10,6 +10,8 @@
 
 [.NET 基础知识](https://docs.microsoft.com/zh-cn/dotnet/fundamentals/)
 
+[.NET Framework 中的网络编程](https://docs.microsoft.com/zh-cn/dotnet/framework/network-programming/)
+
 [System.Threading Namespace](https://docs.microsoft.com/zh-cn/dotnet/api/system.threading?view=netcore-3.1)
 
 [System.Xml.Serialization Namespace](https://docs.microsoft.com/zh-cn/dotnet/api/system.xml.serialization?view=netcore-3.1)
@@ -39,6 +41,8 @@
 [C#中的多线程 - 高级多线程](https://blog.gkarch.com/threading/part4.html)
 
 [最大限度地降低多线程 C# 代码的复杂性](https://docs.microsoft.com/zh-cn/archive/msdn-magazine/2019/february/csharp-minimize-complexity-in-multithreaded-csharp-code)
+
+[High Performance TCP Client Server using TCPListener and TCPClient in .NET Standard](https://www.codeproject.com/Articles/5270779/High-Performance-TCP-Client-Server-using-TCPListen)
 
 [Implementing the Singleton Pattern in C#](https://csharpindepth.com/articles/Singleton)
 ```

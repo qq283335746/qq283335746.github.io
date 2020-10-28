@@ -5,7 +5,11 @@
 
 [A collection of .gitignore templates](https://github.com/github/gitignore)
 
+[github docs](https://docs.github.com/cn)
+
 [github pages帮助文档-中文](https://help.github.com/cn)
+
+[开始使用 GitHub](https://docs.github.com/cn/enterprise-server@2.19/github/getting-started-with-github)
 
 [Git 备忘清单 -中文](https://github.github.com/training-kit/downloads/zh_CN/github-git-cheat-sheet/)
 

@@ -1,8 +1,10 @@
 # Entity Framework Core
 
-[EF使用MySQL：Entity Framework 6 Support](https://dev.mysql.com/doc/connector-net/en/connector-net-entityframework60.html)
+[EF Core 工具和扩展](https://docs.microsoft.com/zh-cn/ef/core/extensions/)
 
 [迁移](https://docs.microsoft.com/zh-cn/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli)
+
+[EF使用MySQL：Entity Framework 6 Support](https://dev.mysql.com/doc/connector-net/en/connector-net-entityframework60.html)
 
 EF6 code-first：
 
