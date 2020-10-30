@@ -6,9 +6,13 @@
 
 [Visual Studio 调试程序文档](https://docs.microsoft.com/zh-cn/visualstudio/debugger/?view=vs-2019)
 
+[VSCode Debugging](https://code.visualstudio.com/docs/editor/debugging)
+
 [Java in Visual Studio Code](https://code.visualstudio.com/docs/languages/java)
 
 [Getting Started with Java in VS Code](https://code.visualstudio.com/docs/java/java-tutorial)
+
+[Java Debug Configuration](https://github.com/microsoft/vscode-java-debug/blob/master/Configuration.md)
 
 [VSCode使用Remote-SSH免密码登陆远程服务器](https://www.cnblogs.com/pzzrudlf/articles/12287162.html)
 

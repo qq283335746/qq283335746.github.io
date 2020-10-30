@@ -6,6 +6,10 @@
 
 [EF使用MySQL：Entity Framework 6 Support](https://dev.mysql.com/doc/connector-net/en/connector-net-entityframework60.html)
 
+[Using PredicateBuilder with EF Core for Complex Queries](https://www.mitchelsellers.com/blog/article/using-predicatebuilder-with-ef-core-for-complex-queries)
+
+[Async Streams with IAsyncEnumerable in .NET Core 3](https://anthonychu.ca/post/async-streams-dotnet-core-3-iasyncenumerable/)
+
 EF6 code-first：
 
 ```

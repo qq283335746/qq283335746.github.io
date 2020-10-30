@@ -2,8 +2,6 @@
 
 [AdoptOpenJDK 11](https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/)
 
-[Java in Visual Studio Code](https://code.visualstudio.com/docs/languages/java)
-
 [maven的安装、路径配置、修改库文件路径和eclipse中的配置、创建maven工程（转）](https://www.cnblogs.com/myseries/p/10846197.html)
 
 [java加载文件示例](https://xuexiyuan.cn/article/detail/40.html)
