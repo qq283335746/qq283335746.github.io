@@ -24,3 +24,8 @@ MongoDB管理工具：Robo 3T
 ```
 技术点：ORM：EF Core，Dapper，NPoco
 ```
+
+SQL Server：
+```
+windows身份认证连接字符串：Data Source=.;Integrated Security=SSPI;Initial Catalog=xxxDb;
+```

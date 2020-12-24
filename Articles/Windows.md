@@ -1,6 +1,7 @@
 # Windows开发人员宝典
 
 [如何：安装和卸载 Windows 服务](https://docs.microsoft.com/zh-cn/dotnet/framework/windows-services/how-to-install-and-uninstall-services)
+
 [Windows Server 文档](https://docs.microsoft.com/zh-cn/windows-server/)
 
 [在 DNS 客户端上禁用 DNS 客户端缓存](https://docs.microsoft.com/zh-cn/windows-server/networking/dns/troubleshoot/disable-dns-client-side-caching)
@@ -15,11 +16,15 @@
 ```
 
 [阿里云-Windows Server2012使用powershell安装IIS的方法](http://www.023dns.com/server_ECS/1560.html)
+
 [阿里云-Windows Server半年渠道镜像与实例管理](https://help.aliyun.com/document_detail/113063.html?spm=a2c4g.11186623.2.13.3fda4c07dCFd0I)
 
 [windows服务器管理](https://docs.microsoft.com/zh-cn/windows-server/administration/manage-windows-server)
+
 [About Remote Troubleshooting](https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-7)
+
 [PowerShell下载](https://github.com/PowerShell/PowerShell/releases/tag/v7.0.1)
+
 [什么是 PowerShell？](https://docs.microsoft.com/zh-cn/powershell/scripting/overview?view=powershell-7)
 ```
 Enable-PSRemoting

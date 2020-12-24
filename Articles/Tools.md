@@ -3,6 +3,8 @@
 导读：开发人员常用工具、注册码、编程技巧等
 ```
 
+[OPC通信](http://www.ad.siemens.com.cn/productportal/Prods/S7-1200_PLC_EASY_PLUS/SmartSMS/031.html)
+
 [Postman Proxy](https://learning.getpostman.com/docs/postman/sending_api_requests/proxy/)
 
 [chrome Postman download](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop/related)

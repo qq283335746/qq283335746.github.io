@@ -21,8 +21,7 @@
 远程连接：
 ssh root@xxx.xxx.xxx.xxx
 
-.net core相关：
-dotnet --list-sdks
+重启：reboot
 
 22端口是否启动：lsof -i:22
 cd /etc/ssh/
@@ -35,6 +34,10 @@ sudo vi ssh_config
 列出占用端口的进程ID: sudo netstat -antup 
 
 查看磁盘空闲情况：df -a
+查看内存使用量：top/free -m
+
+.net core相关：
+dotnet --list-sdks
 
 systemctl操作应用的服务：
 sudo systemctl start/stop/restart/status consul.service
@@ -48,4 +51,7 @@ sudo dpkg -i /tmp/code_latest_amd64.deb
 
 测试端口：
 telnet xxx.xxx.xx.xx 5000 
+
+解压xxx.tar.gz文件：tar -zxvf studio.tar.gz
+
 ```

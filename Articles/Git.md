@@ -3,7 +3,7 @@
 导读：git开发使用技术、github pages相关技术等
 ```
 
-[A collection of .gitignore templates](https://github.com/github/gitignore)
+[.gitignore 模板集合 ](https://github.com/github/gitignore)
 
 [github docs](https://docs.github.com/cn)
 
@@ -51,4 +51,16 @@ git rm -rf .
 
 创建新分支：git branch branchName
 切换到新分支：git checkout branchName
+```
+
+TortoiseGit + Code Compare
+```
+TortoiseGit => 设置 => Diff Viewer：
+
+第一个External：
+C:\Program Files\Devart\Code Compare\CodeCompare.exe /B %base %mine
+
+第二个External：
+C:\Program Files\Devart\Code Compare\CodeCompare.exe
+
 ```
