@@ -73,6 +73,11 @@ C:\Program Files\Devart\Code Compare\CodeCompare.exe
 查看全局配置邮箱：git config --global user.email
 移除全局配置密码：git config --global --unset user.password
 查看全局配置密码：git config --global user.password
+进入项目目录，打开终端输入以下命令进行绑定（每个仓库都需配置）:
+git config user.name "qq283335746"
+git config user.email "yourmail@email.com"
+git config user.password "yourpassword"
+
 
 ```
 
