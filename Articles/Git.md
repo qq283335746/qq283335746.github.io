@@ -67,4 +67,23 @@ C:\Program Files\Devart\Code Compare\CodeCompare.exe /B %base %mine
 第二个External：
 C:\Program Files\Devart\Code Compare\CodeCompare.exe
 
+移除全局配置账户： git config --global --unset user.name
+查看全局用户名：git config --global user.name
+移除全局配置邮箱：git config --global --unset user.email
+查看全局配置邮箱：git config --global user.email
+移除全局配置密码：git config --global --unset user.password
+查看全局配置密码：git config --global user.password
+
+```
+
+### git ssh-key
+```
+
+1、ssh-keygen -t rsa -C "yourname@email.com"
+2、命名输入：id_rsa_github
+3、输入密码：如123456
+4、把上面得到的文件拷贝到git默认访问的.ssh目录：c:\用户\计算机名 => c:\用户\计算机名\.ssh
+5、测试SSH密钥是否生效：ssh -T git@github.com 
+
+
 ```
