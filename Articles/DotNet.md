@@ -44,6 +44,13 @@
 
 [High Performance TCP Client Server using TCPListener and TCPClient in .NET Standard](https://www.codeproject.com/Articles/5270779/High-Performance-TCP-Client-Server-using-TCPListen)
 
+[.NET CLI](https://docs.microsoft.com/zh-cn/dotnet/core/tools/)
+```
+dotnet new sln --name Yibi
+dotnet new classlib --framework netstandard2.0 --name Yibi.Core
+dotnet build src/Yibi.Core/Yibi.Core.csproj
+```
+
 [Implementing the Singleton Pattern in C#](https://csharpindepth.com/articles/Singleton)
 ```
 导读：c#实现单例的6种模式

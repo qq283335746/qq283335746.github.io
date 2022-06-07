@@ -69,6 +69,12 @@
 导读：.NET Core编程指南、进阶、技术参考示例文档。
 ```
 
+[LINQ](./Articles/Linq)
+
+```
+导读：LINQ多表、负责查询。
+```
+
 [移动开发（Xamarin）](./Articles/Xamarin)
 ```
 导读：移动开发（Xamarin）
@@ -108,7 +114,7 @@
 导读：关于MongoDB的使用与问题集锦
 ```
 
-[VSCode](./Articles/VSCode)
+[VisualStudio](./Articles/VisualStudio)
 
 ```
 导读：关于visual studio code 使用

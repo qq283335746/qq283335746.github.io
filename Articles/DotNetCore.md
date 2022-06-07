@@ -1,5 +1,7 @@
 # DotNetCore技术集锦
 
+[下载 .NET](https://dotnet.microsoft.com/zh-cn/download/dotnet)
+
 [.NET Core 指南](https://docs.microsoft.com/zh-cn/dotnet/core/)
 
 [ASP.NET Core官方文档](https://docs.microsoft.com/zh-cn/aspnet/core/?view=aspnetcore-3.1)
@@ -7,6 +9,18 @@
 [EF Core官方文档](https://docs.microsoft.com/zh-cn/ef/#pivot=efcore)
 
 [Microsoft Docs](https://docs.microsoft.com/zh-cn/)
+
+[使用 .NET CLI 发布 .NET 应用 --官方文档](https://docs.microsoft.com/zh-cn/dotnet/core/deploying/deploy-with-cli)
+
+[托管和部署 ASP.NET Core --官方文档](https://docs.microsoft.com/zh-cn/aspnet/core/host-and-deploy/?view=aspnetcore-6.0)
+
+[SqlClient 故障排除指南](https://docs.microsoft.com/zh-cn/sql/connect/ado-net/sqlclient-troubleshooting-guide?view=sql-server-ver15)
+
+[使用加密进行连接](https://docs.microsoft.com/zh-cn/sql/connect/jdbc/connecting-with-ssl-encryption?view=sql-server-ver15)
+
+[web.config 文件](https://docs.microsoft.com/zh-cn/aspnet/core/host-and-deploy/iis/web-config?view=aspnetcore-6.0#set-environment-variables)
+
+[System.Text.Json](https://docs.microsoft.com/zh-cn/dotnet/api/system.text.json?view=net-6.0)
 
 [.NET Core 和 .NET Standard 中的单元测试](https://docs.microsoft.com/zh-cn/dotnet/core/testing/)
 
@@ -41,6 +55,7 @@
 
 asp.net core 日志记录
 ```
+ILogger级别：Trace = 0、Debug = 1、Information = 2、Warning = 3、Error = 4、Critical = 5 和 None = 6
 Serilog.Extensions.Logging.File、NLog、log4net
 
 ``` 
@@ -210,8 +225,8 @@ public static void Main(string[] args)
 }
 public class MyClass
 {
-public void RunSample()
-{
+    public void RunSample()
+    {
         
     }
 }
@@ -280,5 +295,113 @@ public static void MapOldParkingApiRoutes(this IEndpointRouteBuilder endpoints)
         pattern: "{[a-Z]}/openapi/v99999/parking/{action}",
         defaults: new { controller = "ParkingApi", action = "{action}" });
 }
+
+读取环境变量：Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")
+
+```
+
+
+### 开发过程问题备忘
+```
+添加Swagger后未看到相关Controller的接口，访问Swagger页面看到：No operations defined in spec!
+解决方法：在Controller上添加 [Route("api/v1/[controller]/[action]")]
+
+Asp.Net Core 6 接口输出json首字母小写格式，改为首字母大写格式的方法：
+.AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.PropertyNamingPolicy = null;
+});
+
+在web.config配置运行环境：
+<aspNetCore>
+  <environmentVariables>
+    <environmentVariable name="ASPNETCORE_ENVIRONMENT" value="Development" />
+  </environmentVariables>
+</aspNetCore>
+
+.NET CLI 使用发布配置文件 (.pubxml)进行发布：
+dotnet publish src/ExSaf/ExSaf.csproj /p:PublishProfile=FolderProfile.pubxml -o F:\Publish\Web
+对比dotnet publish -c Release -r win-x64 -p:UseAppHost=false -f net6.0 --self-contained false -o F:\Publish\Web，发现使用发布配置文件 (.pubxml)在F:\Publish\Web目录下的文件最小。
+
+FolderProfile.pubxml：
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <DeleteExistingFiles>false</DeleteExistingFiles>
+    <ExcludeApp_Data>false</ExcludeApp_Data>
+    <LaunchSiteAfterPublish>true</LaunchSiteAfterPublish>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <PublishProvider>FileSystem</PublishProvider>
+    <PublishUrl>F:\Publish\ExSaf\Web-Cli-4</PublishUrl>
+    <WebPublishMethod>FileSystem</WebPublishMethod>
+    <SiteUrlToLaunchAfterPublish />
+    <TargetFramework>net6.0</TargetFramework>
+    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+    <ProjectGuid>493c2626-ec27-4d26-a4fa-e3c9a0637b75</ProjectGuid>
+    <SelfContained>false</SelfContained>
+	<EnvironmentName>Development</EnvironmentName>
+  </PropertyGroup>
+</Project>
+
+问题：efcore:A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 31 - Encryption(ssl/tls) handshake failed)
+解决：
+sudo nano /etc/ssl/openssl.cnf --打开编辑openssl.cnf文件，经测试未成功...
+
+[SqlClient 故障排除指南](https://docs.microsoft.com/zh-cn/sql/connect/ado-net/sqlclient-troubleshooting-guide?view=sql-server-ver15)
+
+[Released: General Availability of Microsoft.Data.SqlClient 4.0]https://techcommunity.microsoft.com/t5/sql-server-blog/released-general-availability-of-microsoft-data-sqlclient-4-0/ba-p/2983346
+
+微软sql server技术支持电话：8008203800按2转企业然后按3转技术咨询
+
+.NET6.0新的连接字符串属性（如 encrypt、trustServerCertificate、trustStore、trustStorePassword、hostNameInCertificate）
+[使用加密进行连接](https://docs.microsoft.com/zh-cn/sql/connect/jdbc/connecting-with-ssl-encryption?view=sql-server-ver15)
+
+导入导出Excel相关类库：
+DocumentFormat.OpenXml、EPPlus
+
+Controller Action：
+using (var stream = new MemoryStream())
+{
+    workbook.SaveAs(stream);
+    var content = stream.ToArray();
+
+    return File(
+        content,
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "users.xlsx");
+}
+
+Timer使用：
+
+public class TimerService : IDisposable
+{
+    private readonly static TimeSpan heartbeatTickRate = TimeSpan.FromSeconds(5);
+
+    public async Task Start()
+    {
+        if (timer is null)
+        {
+            timer = new(heartbeatTickRate);
+
+            using (timer)
+            {
+                while (await timer.WaitForNextTickAsync())
+                {
+
+                }
+            }
+        }
+    }
+
+    public void Dispose()
+    {
+        timer?.Dispose();
+    }
+}
+
 ```
 

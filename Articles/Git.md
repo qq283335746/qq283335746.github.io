@@ -34,6 +34,10 @@
 
 git相关操作
 ```
+
+git remote -v
+git pull -f origin master
+
 .gitignore不起作用解决方法：
 git rm -r --cached .
 git add .
