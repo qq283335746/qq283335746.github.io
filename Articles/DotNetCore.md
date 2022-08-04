@@ -14,6 +14,12 @@
 
 [托管和部署 ASP.NET Core --官方文档](https://docs.microsoft.com/zh-cn/aspnet/core/host-and-deploy/?view=aspnetcore-6.0)
 
+[使用 ASP.NET Core 安全地存储开发中的应用机密](https://docs.microsoft.com/zh-CN/aspnet/core/security/app-secrets?view=aspnetcore-6.0&tabs=windows#secret-manager)
+
+[ASP.NET Core 中的静态文件](https://docs.microsoft.com/zh-cn/aspnet/core/fundamentals/static-files?view=aspnetcore-6.0)
+
+[在 ASP.NET Core 中上传文件](https://docs.microsoft.com/zh-cn/aspnet/core/mvc/models/file-uploads?view=aspnetcore-6.0)
+
 [SqlClient 故障排除指南](https://docs.microsoft.com/zh-cn/sql/connect/ado-net/sqlclient-troubleshooting-guide?view=sql-server-ver15)
 
 [使用加密进行连接](https://docs.microsoft.com/zh-cn/sql/connect/jdbc/connecting-with-ssl-encryption?view=sql-server-ver15)
@@ -155,6 +161,7 @@ public async Task<string> GenerateOrderCodeAsync(string key,string prefix)
 
     return $"{prefix}{value.ToString().PadLeft(9,'0')}";
 }
+
 ```
 
 [Microsoft.AspNetCore.DataProtection-示例0001](https://stackoverflow.com/questions/38795103/encrypt-string-in-net-core)
@@ -201,7 +208,55 @@ public async Task<string> GenerateOrderCodeAsync(string key,string prefix)
 
 [SendGrid使用方法](http://blog.sina.com.cn/s/blog_517206ba01015o8x.html)
 
-asp.net core 以编程方式发送电子邮件
+[asp.net core的虚拟目录](https://dotblogs.com.tw/supershowwei/2020/01/06/111404)
+
+[ASP.Net core 中Server.MapPath的替换方法](https://blog.csdn.net/shanghaimoon/article/details/114338839)
+
+### Http相关类
+```
+System.Net.Mime.MediaTypeNames.Application --Json
+System.Net.Mime.MediaTypeNames.Image
+System.Net.Mime.MediaTypeNames.Text --Xml
+```
+
+### Asp.Net Core 机密管理：
+```
+dotnet user-secrets init --project src\Yibi\Yibi.csproj
+dotnet user-secrets list --project src\Yibi\Yibi.csproj
+dotnet user-secrets set "db_Password" "yourpassword" --project src\Yibi\Yibi.csproj
+```
+
+### 数据保护：
+```
+引入包：<PackageReference Include="Microsoft.AspNetCore.DataProtection.Extensions" Version="$(MicrosoftAspNetCorePackageVersion)" />
+
+services.AddDataProtection()
+        .ProtectKeysWithCertificate(accessTokenOptions.Value.SecretKey)
+        .UseCustomCryptographicAlgorithms(new ManagedAuthenticatedEncryptorConfiguration
+        {
+            // A type that subclasses SymmetricAlgorithm
+            EncryptionAlgorithmType = typeof(Aes),
+            // Specified in bits
+            //EncryptionAlgorithmKeySize = 256,
+            // A type that subclasses KeyedHashAlgorithm
+            ValidationAlgorithmType = typeof(HMACSHA256)
+        })
+        //.UseCryptographicAlgorithms(new AuthenticatedEncryptorConfiguration
+        //{
+        //    EncryptionAlgorithm = EncryptionAlgorithm.AES_256_CBC,
+        //    ValidationAlgorithm = ValidationAlgorithm.HMACSHA256
+        //})
+        ;
+
+var _dataProtectionProvider = provider.GetRequiredService<IDataProtectionProvider>();
+var _protector = _dataProtectionProvider.CreateProtector("ProtectorName");
+var input = "123456";
+var encryptInput = _protector.Protect(input);
+_protector = _dataProtectionProvider.CreateProtector("ProtectorName");
+var decryptInput = _protector.Unprotect(encryptInput);
+```
+
+### asp.net core 以编程方式发送电子邮件
 ```
 1、SendGrid
 2、MailKit and MimeKit
@@ -210,7 +265,7 @@ asp.net core 以编程方式发送电子邮件
 创建一个CancellationToken：var cancellationToken = default(CancellationToken);
 
 
-.Net Core依赖注入代码片段集锦：
+### .Net Core依赖注入代码片段集锦：
 ```
 public static void Main(string[] args)
 {
@@ -253,7 +308,7 @@ services.AddHttpClient(HttpClientNames.DingtalkClient, client =>
     client.DefaultRequestHeaders.TryAddWithoutValidation("Content-Type", "application/json");
 });
 ```
-.net core跨域设置代码片段：
+### .net core跨域设置代码片段：
 ```
 public void Configure(IApplicationBuilder app)
 {
@@ -282,7 +337,7 @@ public class AuthenticationController{
 }
 ```
 
-asp.net core razor:
+### asp.net core razor:
 ```
 使用@: 或 <text> 可在c#代码中写js代码。
 ```
@@ -297,6 +352,10 @@ public static void MapOldParkingApiRoutes(this IEndpointRouteBuilder endpoints)
 }
 
 读取环境变量：Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")
+
+机密管理：
+var config = provider.GetRequiredService<IConfiguration>();
+databaseOptions.Value.ConnectionString = databaseOptions.Value.ConnectionString.Trim(';') + $";Password={config["db_Password"]};";
 
 ```
 

@@ -78,6 +78,9 @@ git config user.name "qq283335746"
 git config user.email "yourmail@email.com"
 git config user.password "yourpassword"
 
+使用 git remote set-url 命令将远程的 URL 从 SSH 更改为 HTTPS：
+git remote set-url origin https://github.com/qq283335746/qq283335746.github.io.git
+
 
 ```
 

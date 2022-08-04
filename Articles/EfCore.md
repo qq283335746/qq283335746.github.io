@@ -10,7 +10,7 @@
 
 [Async Streams with IAsyncEnumerable in .NET Core 3](https://anthonychu.ca/post/async-streams-dotnet-core-3-iasyncenumerable/)
 
-EF6 code-first：
+### EF6 code-first：
 
 ```
 vs-工具-NuGet包管理器-程序包管理器控制台：
@@ -22,7 +22,7 @@ Add-Migration -Name "DbMigrations001" -ConnectionString "server=localhost;port=3
 Update-Database -ConnectionString "server=localhost;port=3306;uid=xx;password=xxx;database=xxxx;" -ConnectionProviderName MySql.Data.MySqlClient    --OK
 ```
 
-EF Core code-first：
+### EF Core code-first：
 
 ```
 dotnet ef migrations add DbMigrations001 --output-dir DbMigrations --context MySqlSyncContext --startup-project ..\YourWeb\YourWeb.csproj
@@ -37,9 +37,23 @@ LinqKit.Core包使用PredicateBuilder多条件拼接查询
 
 ```
 
-代码片段备忘：
+### 代码片段备忘：
 
 ```
+
+-----------------------------------------------------------------------------------
+List<string>属性映射：
+public List<string> RelatedSo { get; set; }
+entity.Property(e => e.RelatedSo)
+    .HasConversion(v => JsonSerializer.Serialize(v, default),
+        v => JsonSerializer.Deserialize<List<string>>(v, default))
+    .Metadata
+    .SetValueComparer(new ValueComparer<List<string>>(
+    (c1, c2) => c1.SequenceEqual(c2),
+    c => c.Aggregate(0, (a, v) => HashCode.Combine(a, v.GetHashCode())),
+    c => c.ToList()));
+-------------------------------------------------------------------------------------
+
 public Task<int> SaveChangesAsync() => SaveChangesAsync(default(CancellationToken));
 
 SQL 转 Entity Framework Core 查询：

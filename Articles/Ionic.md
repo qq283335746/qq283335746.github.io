@@ -13,6 +13,7 @@
 ```
 导读：ionic示例集，包含登录、注册等功能模块。
 ```
+[Installing Ionic V1, Cordova Download, and Dependencies](https://ionicframework.com/docs/v1/guide/installation.html)
 
 [Android Platform Guide --Cordova](https://cordova.apache.org/docs/en/dev/guide/platforms/android/index.html)
 
@@ -24,7 +25,16 @@
 
 Ionic常用命令：
 ```
-npm install -g cordova ionic
+npm install -g ionic@latest
+
+ionic v1:
+ionic start MyionicApp sidemenu --type=ionic1
+
+npm install -g cordova ionic or npm install -g cordova ionic@3.* (latest:3.9.2)
+ionic start helloWorld blank --type=ionic-angular
+cd helloWorld
+ionic serve
+
 step1：ionic start wms sidemenu --type ionic1
 step2：ionic cordova platform add android
 step3：ionic cordova build android
