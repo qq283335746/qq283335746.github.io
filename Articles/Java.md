@@ -1,5 +1,7 @@
 # java developer
 
+[Microsoft Build of OpenJDK --微软java jdk](https://docs.microsoft.com/zh-cn/java/openjdk/)
+
 [AdoptOpenJDK 11](https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/)
 
 [How To Install Java with Apt on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04)
@@ -12,6 +14,7 @@
 
 ```
 java jdks:
+Microsoft Build of OpenJDK
 AdoptOpenJDK as:
     AdoptOpenJDK 8
     AdoptOpenJDK 11

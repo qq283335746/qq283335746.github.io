@@ -21,9 +21,11 @@
 
 [Getting Started With Ionic 4, Angular And .NET Core 3](https://www.c-sharpcorner.com/article/getting-started-with-ionic-framework-angular-and-net-core-3/)
 
+[npm install Error: not found: python2 解决方案](https://blog.csdn.net/liwan09/article/details/106975041)
+
 安装：ionic visual studio code 插件
 
-Ionic常用命令：
+### Ionic常用命令：
 ```
 npm install -g ionic@latest
 
@@ -61,6 +63,17 @@ build.json：
             "keystoreType": "jks"
         }
     }
- }
+}
+
+cordova platform add android
+cordova build android --release --buildConfig
+ 
+```
+
+### npm问题集锦：
+```
+npm install出现error MSB3428:Could not load the Visual C++ component VCBuild.exe错误
+npm install -g --production windows-build-tools
+
 ```
 
