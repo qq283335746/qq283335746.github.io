@@ -9,3 +9,9 @@
 [CHROMIUM OS --官方推荐](https://arnoldthebat.co.uk/wordpress/chromium-os/)
 
 [How To Run Google Chrome OS From Your USB Drive [MiniTool Tips]](https://www.minitool.com/news/google-chrome-operating-system.html)
+
+# Windows PE (WinPE)
+[下载 Windows PE (WinPE)](https://docs.microsoft.com/zh-cn/windows-hardware/manufacture/desktop/download-winpe--windows-pe?view=windows-11)
+
+# Microsoft Validation OS
+[Microsoft 验证 OS](https://docs.microsoft.com/zh-cn/windows-hardware/manufacture/desktop/validation-os-overview?view=windows-11)

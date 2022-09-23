@@ -1,0 +1,12 @@
+# SQL
+
+### sql常用值转换
+```
+将"2022-09"字符串得到2022：
+DATENAME(YEAR,Cast(YearMonth+'-01' As DateTime))
+
+将datetime得到2022-09-22：
+convert(varchar(10),CreatedDate,120)
+
+```
+

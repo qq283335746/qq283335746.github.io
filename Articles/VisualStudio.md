@@ -28,7 +28,9 @@
 
 [VSCode使用Remote-SSH免密码登陆远程服务器](https://www.cnblogs.com/pzzrudlf/articles/12287162.html)
 
-vscode快捷键：
+### vscode 远程协同工作插件：Visual Studio Live Share
+
+### vscode快捷键：
 ```
 控制台清屏：Terminal: Clear
 转到定义及返回：alt + ←

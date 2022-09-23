@@ -2,9 +2,11 @@
 
 [redis Download](https://redis.io/download)
 
-[示例源码](https://github.com/qq283335746/Yibi/tree/master/Src/Yibi/Cache) <br /><br />
-
 [Redis on Windows](https://github.com/microsoftarchive/redis/releases)
+
+[在 windows 上安装 Redis](https://redis.com.cn/redis-installation.html)
+
+[示例源码](https://github.com/qq283335746/Yibi/tree/master/Src/Yibi/Cache)
 
 [安装Chocolatey Redis 包并安装redis](https://chocolatey.org/packages/redis-64/)
 

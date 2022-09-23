@@ -23,7 +23,7 @@
 
 [JSON转C#实体类](https://www.bejson.com/convert/json2csharp/)
 
-安装密钥：
+### 安装密钥：
 ```
 Visual Studio 2019 企业版：
 BF8Y8-GN2QH-T84XB-QVY3B-RC4DF
@@ -49,9 +49,11 @@ GitHub中README.md添加图片方式：
 ![image](https://github.com/qq283335746/My/raw/master/MyImages/BaoAnQuZhongXinYiYuan/jianyanbaogaodan004.jpg)，注意：blob应改为raw。
 ```
 
-搭建自己的git源码管理：gitea
+### 搭建自己的git源码管理：gitea
 
 git常用命令：
 更改git账号：
 git config --global user.name "Your_username" 
 git config --global user.email "Your_email"
+
+### 虚拟机：VirthalBox
