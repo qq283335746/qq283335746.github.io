@@ -12,8 +12,6 @@
 
 [Visual Studio 调试程序文档](https://docs.microsoft.com/zh-cn/visualstudio/debugger/?view=vs-2019)
 
-[.NET CLI 概述](https://docs.microsoft.com/zh-cn/dotnet/core/tools/)
-
 [使用visual studio code - .NET 基础知识](https://docs.microsoft.com/zh-cn/dotnet/core/tutorials/library-with-visual-studio-code)
 
 [VSCode Debugging](https://code.visualstudio.com/docs/editor/debugging)
@@ -28,7 +26,14 @@
 
 [VSCode使用Remote-SSH免密码登陆远程服务器](https://www.cnblogs.com/pzzrudlf/articles/12287162.html)
 
-### vscode 远程协同工作插件：Visual Studio Live Share
+### vscode + extension for Visual Studio Code
+```
+远程协同工作插件：Visual Studio Live Share
+
+C# --Microsoft
+C# XML Documentation Comments  --Keisuke Kato
+SQl Server Client(mssql)  --Weijan Chen
+```
 
 ### vscode快捷键：
 ```
@@ -52,7 +57,7 @@ ctrl+p  --查找文件
 
 ```
 
-vscode remote:
+### vscode remote:
 
 ```
 vscode Remote-SSH：
@@ -81,7 +86,7 @@ Host 192.168.xxx.xx
 vscode远程-免密连接linux --end：
 ```
 
-vscode + c#
+### vscode + c#
 ```
 开发环境相关插件：
 C#  --Microsoft
@@ -91,14 +96,14 @@ JS-CSS-HTML Formatter  --lonefy
 
 ```
 
-vscode + java:
+### vscode + java:
 
 ```
 （ctrl+shift+p）Java: Clean the Java language server workspace
 常用插件：springboot + Lombok
 ```
 
-vscode + .net cli:
+### vscode + .net cli:
 
 ```
 创建解决方案：dotnet new sln -n YibiSample
@@ -117,5 +122,14 @@ dotnet add package --version 6.3.0 Swashbuckle.AspNetCore
 dotnet add src/ExSaf/ExSaf.csproj package Swashbuckle.AspNetCore -v 6.3.0
 
 ```
+
+### vscode + git
+```
+vscode git 每次都要求输入用户名和密码:git config --global credential.helper store  重启vscode
+
+git pull "请在合并前提交或贮藏您的修改" : git config pull.rebase false
+```
+
+
 
 

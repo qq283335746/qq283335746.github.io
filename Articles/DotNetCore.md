@@ -1,32 +1,22 @@
 # DotNetCore技术集锦
 
+[Microsoft Docs](https://docs.microsoft.com/zh-cn/)
+
 [下载 .NET](https://dotnet.microsoft.com/zh-cn/download/dotnet)
 
 [.NET Core 指南](https://docs.microsoft.com/zh-cn/dotnet/core/)
 
-[ASP.NET Core官方文档](https://docs.microsoft.com/zh-cn/aspnet/core/?view=aspnetcore-3.1)
+[ASP.NET Core官方文档](https://learn.microsoft.com/zh-cn/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-6.0)
 
 [EF Core官方文档](https://docs.microsoft.com/zh-cn/ef/#pivot=efcore)
 
-[Microsoft Docs](https://docs.microsoft.com/zh-cn/)
-
 [使用 .NET CLI 发布 .NET 应用 --官方文档](https://docs.microsoft.com/zh-cn/dotnet/core/deploying/deploy-with-cli)
-
-[托管和部署 ASP.NET Core --官方文档](https://docs.microsoft.com/zh-cn/aspnet/core/host-and-deploy/?view=aspnetcore-6.0)
-
-[使用 ASP.NET Core 安全地存储开发中的应用机密](https://docs.microsoft.com/zh-CN/aspnet/core/security/app-secrets?view=aspnetcore-6.0&tabs=windows#secret-manager)
-
-[ASP.NET Core 中的静态文件](https://docs.microsoft.com/zh-cn/aspnet/core/fundamentals/static-files?view=aspnetcore-6.0)
-
-[在 ASP.NET Core 中上传文件](https://docs.microsoft.com/zh-cn/aspnet/core/mvc/models/file-uploads?view=aspnetcore-6.0)
 
 [SqlClient 故障排除指南](https://docs.microsoft.com/zh-cn/sql/connect/ado-net/sqlclient-troubleshooting-guide?view=sql-server-ver15)
 
 [使用加密进行连接](https://docs.microsoft.com/zh-cn/sql/connect/jdbc/connecting-with-ssl-encryption?view=sql-server-ver15)
 
 [web.config 文件](https://docs.microsoft.com/zh-cn/aspnet/core/host-and-deploy/iis/web-config?view=aspnetcore-6.0#set-environment-variables)
-
-[System.Text.Json](https://docs.microsoft.com/zh-cn/dotnet/api/system.text.json?view=net-6.0)
 
 [.NET Core 和 .NET Standard 中的单元测试](https://docs.microsoft.com/zh-cn/dotnet/core/testing/)
 
