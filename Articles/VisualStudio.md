@@ -38,8 +38,7 @@ SQl Server Client(mssql)  --Weijan Chen
 ### vscode快捷键：
 ```
 控制台清屏：Terminal: Clear
-转到定义及返回：alt + ←
-
+转到方法定义后返回：windows: alt + ← ，ubuntu: Ctrl + alt + -
 visual studio 转到定义后返回：ctrl+-
 代码格式化：windows:Shift + Alt + F，ubuntu: Ctrl + Shift + I
 删除当前行：CTRL + shift + K

@@ -16,8 +16,6 @@
 
 [使用加密进行连接](https://docs.microsoft.com/zh-cn/sql/connect/jdbc/connecting-with-ssl-encryption?view=sql-server-ver15)
 
-[web.config 文件](https://docs.microsoft.com/zh-cn/aspnet/core/host-and-deploy/iis/web-config?view=aspnetcore-6.0#set-environment-variables)
-
 [.NET Core 和 .NET Standard 中的单元测试](https://docs.microsoft.com/zh-cn/dotnet/core/testing/)
 
 [Azure 体系结构中心](https://docs.microsoft.com/zh-cn/azure/architecture/)
@@ -38,8 +36,6 @@
 [serilog日志写到文件-serilog-sinks-file](https://github.com/serilog/serilog-sinks-file)
 
 [serilog日志配置参数-serilog-settings-configuration](https://github.com/serilog/serilog-settings-configuration)
-
-[NLog官网](https://nlog-project.org/)
 
 [NLog.Extensions.Logging - NLog provider for Microsoft.Extensions.Logging](https://github.com/NLog/NLog.Extensions.Logging)
 
