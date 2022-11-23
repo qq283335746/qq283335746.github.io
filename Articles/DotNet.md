@@ -108,9 +108,10 @@ services.AddMvc(opts=> {
 
 ```
 
-c#
+### c#
 ```
 声明一个decimal并赋值：var price = 0.00m;
+转2、8、10、16进制等字符串：Convert.ToString(c, toBase: 16)
 ```
 System.Threading.Timer和System.Timers.Timer执行异步方法：
 ```

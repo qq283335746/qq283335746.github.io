@@ -32,7 +32,8 @@
 
 C# --Microsoft
 C# XML Documentation Comments  --Keisuke Kato
-SQl Server Client(mssql)  --Weijan Chen
+SQLTools --Matheus Teixeira + SQLTools Microsoft SQL Server/Azure
+SQl Server Client(mssql)  --Weijan Chen 
 ```
 
 ### vscode快捷键：

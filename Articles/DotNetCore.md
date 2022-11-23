@@ -200,6 +200,8 @@ public async Task<string> GenerateOrderCodeAsync(string key,string prefix)
 
 ### Http相关类
 ```
+Microsoft.Net.Http.Headers.HeaderNames --headers
+System.Net.Mime.MediaTypeNames
 System.Net.Mime.MediaTypeNames.Application --Json
 System.Net.Mime.MediaTypeNames.Image
 System.Net.Mime.MediaTypeNames.Text --Xml
