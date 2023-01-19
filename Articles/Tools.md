@@ -57,3 +57,5 @@ git config --global user.name "Your_username"
 git config --global user.email "Your_email"
 
 ### 虚拟机：VirthalBox
+
+Rufus：轻松创建USB启动盘
