@@ -46,6 +46,8 @@ visual studio 转到定义后返回：ctrl+-
 
 调出命令面板：Ctrl+Shift+P
 
+ctrl+k+8 --#region #endregion全部折叠
+ctrl+k+9 --#region #endregion全部展开
 ctrl+shift+[  --折叠
 ctrl+k ctrl+0  --折叠全部
 ctrl+shift+]  --展开
@@ -84,6 +86,8 @@ Host 192.168.xxx.xx
   IdentityFile ~/.ssh/id_rsa_192-168-xxx-xx
 
 vscode远程-免密连接linux --end：
+
+code tunnel --accept-server-license-terms
 ```
 
 ### vscode + c#
@@ -128,6 +132,8 @@ dotnet add src/ExSaf/ExSaf.csproj package Swashbuckle.AspNetCore -v 6.3.0
 vscode git 每次都要求输入用户名和密码:git config --global credential.helper store  重启vscode
 
 git pull "请在合并前提交或贮藏您的修改" : git config pull.rebase false
+
+vscode创建标签后不自动提交，手动：git push --tags
 ```
 
 

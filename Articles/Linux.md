@@ -76,3 +76,9 @@ cat /etc/passwd
 
 
 ```
+
+# ubuntu 22.04 蓝牙
+找不到蓝牙，运行：/usr/lib/bluetooth/bluetoothd -n -d ：
+D-Bus setup failed connection 1.167 is not allow to own the service bluez due to security policies in the configuration file 
+bluetoothd[8444] unable to get on D-Bus
+
