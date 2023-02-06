@@ -83,6 +83,9 @@ https://community.postman.com/t/interceptor-integration-for-postman-native-apps/
 ```
 
 # ubuntu 22.04 蓝牙
-找不到蓝牙，运行：/usr/lib/bluetooth/bluetoothd -n -d ：
+
+问题：设置-蓝牙已关闭，点击开关无反应，运行：/usr/lib/bluetooth/bluetoothd -n -d 见：
 D-Bus setup failed connection 1.167 is not allow to own the service bluez due to security policies in the configuration file 
 bluetoothd[8444] unable to get on D-Bus
+
+解决：？
