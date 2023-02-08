@@ -74,6 +74,8 @@ cat /etc/passwd
 使用winscp远程连接工具，上传文件时报错：无法创建远程文件...无权访问，错误码3，服务器返回的错误信息：permission denied
 解决：改etc/passwd文件，将当前登录用户的1000改为0即可。
 
+ubuntu 修改文件：sudo gedit xxx.conf
+
 
 ```
 
@@ -89,3 +91,10 @@ D-Bus setup failed connection 1.167 is not allow to own the service bluez due to
 bluetoothd[8444] unable to get on D-Bus
 
 解决：？
+
+/etc/bluetooth/main.conf：改为：ControllerMode=bredr，命令：sudo xedit main.conf
+打开蓝牙：sudo hciconfig hci0 up
+扫描蓝牙：sudo hciconfig iscan
+启动蓝牙程序：bluetoothctl
+启动/关闭蓝牙电源：power on/off
+sudo journalctl -fu bluetooth.service
