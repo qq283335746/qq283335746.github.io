@@ -98,3 +98,13 @@ bluetoothd[8444] unable to get on D-Bus
 启动蓝牙程序：bluetoothctl
 启动/关闭蓝牙电源：power on/off
 sudo journalctl -fu bluetooth.service
+
+### [Fix Bluetooth rtl8761b Problem on Linux (Ubuntu 22.04)](https://fosspost.org/fix-bluetooth-rtl8761b-problem-on-linux-ubuntu-22-04/)
+```
+sudo dmesg | grep bluetooth
+cd /lib/firmware/rtl_bt
+sudo ln -s rtl8761b_config.bin rtl8761bu_config.bin
+sudo ln -s rtl8761b_fw.bin rtl8761bu_fw.bin
+```
+
+关注下：Kodi播放器
