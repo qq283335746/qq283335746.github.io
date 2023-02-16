@@ -62,6 +62,11 @@ ctrl+p  --查找文件
 ### vscode remote:
 
 ```
+vscode+WSL:
+1、点击左下角><图标
+2、New WSL Window
+3、即可进入
+
 vscode Remote-SSH：
 1、点击左下角><图标
 2、Remote-SSH Connect to Host
@@ -87,7 +92,17 @@ Host 192.168.xxx.xx
 
 vscode远程-免密连接linux --end：
 
+//vscode 自带命令行开启远程开发：
 code tunnel --accept-server-license-terms
+[Developing with Remote Tunnels](https://code.visualstudio.com/docs/remote/tunnels)
+
+--install code-server
+[install code-server](https://coder.com/docs/code-server/latest/install#debian-ubuntu):
+curl -fOL https://github.com/coder/code-server/releases/download/v4.10.0/code-server-4.10.0-amd64.rpm
+sudo dpkg -i code-server_4.10.0_amd64.deb
+sudo systemctl enable --now code-server@$USER
+
+
 ```
 
 ### vscode + c#

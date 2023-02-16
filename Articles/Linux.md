@@ -1,6 +1,21 @@
+# Linux OS
+[ChromeOS Flex](https://chrome100.dev/board/reven)
+
 # Linux开发人员宝典
 
-[适用于 Linux 的 Windows 子系统文档](https://docs.microsoft.com/zh-cn/windows/wsl/)
+### [适用于 Linux 的 Windows 子系统文档](https://learn.microsoft.com/zh-cn/windows/wsl/)
+```
+问题：无法从'https://raw.githubusercontent.com/microsoft/WSL/master/distributions/DistributionInfo.json'提取列表分发。
+无法解析服务器的名称或地址
+解决：
+1、在https://www.ipaddress.com输入raw.githubusercontent.com查询其ip4相关地址
+打开C:\Windows\System32\drivers\etc\hosts，将上面得到的ip4地址添加，如：
+185.199.108.133  raw.githubusercontent.com
+185.199.109.133  raw.githubusercontent.com
+185.199.110.133  raw.githubusercontent.com
+185.199.111.133  raw.githubusercontent.com
+
+```
 
 [SecureCRT-linux远程工具](https://www.vandyke.com/cgi-bin/releases.php?product=securecrt)
 
@@ -20,7 +35,6 @@
 
 开发人员常用命令：
 ```
-
 ssh root@xxx.xxx.xxx.xxx  --远程连接
 reboot --重启
 sudo apt install nginx  --ubuntu 安装nginx
@@ -33,7 +47,10 @@ ss -an | grep 6379  --查看端口监听列表
 cd /etc/ssh/
 sudo vi ssh_config
 
-lsb_release -a  --查看系统版本
+--查看系统版本
+lsb_release -a  
+cat /proc/version 
+uname -a
 
 查看端口相关操作：
 查看指定端口，可以结合grep命令：sudo netstat -ap | grep 80 或 sudo netstat -apn | grep 80
@@ -76,6 +93,15 @@ cat /etc/passwd
 
 ubuntu 修改文件：sudo gedit xxx.conf
 
+--创建文件夹/文件名
+mkdir 文件夹名
+touch 文件名.后缀类型
+
+ubuntu 添加dotnet tool到环境变量：
+cat << \EOF >> ~/.bash_profile
+# Add .NET Core SDK tools
+export PATH="$PATH:/home/yibi/.dotnet/tools"
+EOF
 
 ```
 
@@ -83,6 +109,9 @@ ubuntu 修改文件：sudo gedit xxx.conf
 ```
 https://community.postman.com/t/interceptor-integration-for-postman-native-apps/5290
 ```
+
+### ubuntu 为URL创建快捷方式：
+[Create a shortcut for URL?](https://askubuntu.com/questions/359492/create-a-shortcut-for-url#:~:text=Additionally%2C%20like%20all%20solutions%20that%20involve%20a%20command,click%20on%20the%20shortcut%20and%20add%20execution%20permissions)
 
 # ubuntu 22.04 蓝牙
 
@@ -98,6 +127,10 @@ bluetoothd[8444] unable to get on D-Bus
 启动蓝牙程序：bluetoothctl
 启动/关闭蓝牙电源：power on/off
 sudo journalctl -fu bluetooth.service
+sudo hciconfig hci0 piscan:can't set scan mode on hci0:network is down (100)
+sudo hciconfig hci0 up:can't init device hci0:Invalid request code (56)
+sudo hciconfig hci0 reset
+sudo lsmod
 
 ### [Fix Bluetooth rtl8761b Problem on Linux (Ubuntu 22.04)](https://fosspost.org/fix-bluetooth-rtl8761b-problem-on-linux-ubuntu-22-04/)
 ```
