@@ -60,7 +60,6 @@ ctrl+p  --查找文件
 ```
 
 ### vscode remote:
-
 ```
 vscode+WSL:
 1、点击左下角><图标
@@ -97,11 +96,25 @@ code tunnel --accept-server-license-terms
 [Developing with Remote Tunnels](https://code.visualstudio.com/docs/remote/tunnels)
 
 --install code-server
-[install code-server](https://coder.com/docs/code-server/latest/install#debian-ubuntu):
-curl -fOL https://github.com/coder/code-server/releases/download/v4.10.0/code-server-4.10.0-amd64.rpm
-sudo dpkg -i code-server_4.10.0_amd64.deb
-sudo systemctl enable --now code-server@$USER
 
+
+```
+
+### code-server
+```
+[install code-server](https://coder.com/docs/code-server/latest/install#debian-ubuntu):
+curl -fOL https://github.com/coder/code-server/releases/download/v4.10.0/code-server_4.10.0_amd64.deb
+sudo dpkg -i code-server_4.10.0_amd64.deb
+sudo systemctl enable --now code-server@yibi
+sudo systemctl start code-server@yibi
+
+--code-server后台运行：
+sudo systemctl restart code-server@$USER
+
+--code-server启动输出：
+Using config file ~/.config/code-server/config.yaml --可修改ip与端口
+HTTP server listening on http://0.0.0.0:8088/  --打开chrome等浏览器即可浏览
+Using password from ~/.config/code-server/config.yaml  --可修改连接密码
 
 ```
 

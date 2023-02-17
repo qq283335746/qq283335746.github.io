@@ -15,6 +15,11 @@
 185.199.110.133  raw.githubusercontent.com
 185.199.111.133  raw.githubusercontent.com
 
+--开启wsl2 systemd:
+echo -e "[boot]\nsystemd=true" | sudo tee -a /etc/wsl.conf
+wsl --shutdown --重启
+systemctl list-unit-files --type=service --确认systemd是否已开启
+
 ```
 
 [SecureCRT-linux远程工具](https://www.vandyke.com/cgi-bin/releases.php?product=securecrt)
@@ -91,7 +96,7 @@ cat /etc/passwd
 使用winscp远程连接工具，上传文件时报错：无法创建远程文件...无权访问，错误码3，服务器返回的错误信息：permission denied
 解决：改etc/passwd文件，将当前登录用户的1000改为0即可。
 
-ubuntu 修改文件：sudo gedit xxx.conf
+ubuntu 修改文件：sudo gedit xxx.conf sudo xedit main.conf
 
 --创建文件夹/文件名
 mkdir 文件夹名
