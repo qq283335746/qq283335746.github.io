@@ -4,7 +4,9 @@
 
 [C# 文档](https://docs.microsoft.com/zh-cn/dotnet/csharp/)
 
-[.NET 文档](https://docs.microsoft.com/zh-cn/dotnet/)
+[.NET 文档](https://learn.microsoft.com/zh-cn/dotnet/)
+
+[.NET 文档](https://learn.microsoft.com/zh-cn/dotnet/fundamentals/)
 
 [欢迎使用 .NET](https://docs.microsoft.com/zh-cn/dotnet/welcome)
 

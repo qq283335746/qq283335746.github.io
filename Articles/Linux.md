@@ -38,7 +38,7 @@ systemctl list-unit-files --type=service --确认systemd是否已开启
 
 [纯干货：23个服务器常见问题处理方法](https://baijiahao.baidu.com/s?id=1665926621488582098&wfr=spider&for=pc)
 
-开发人员常用命令：
+### 开发人员常用命令：
 ```
 ssh root@xxx.xxx.xxx.xxx  --远程连接
 reboot --重启
@@ -107,6 +107,14 @@ cat << \EOF >> ~/.bash_profile
 # Add .NET Core SDK tools
 export PATH="$PATH:/home/yibi/.dotnet/tools"
 EOF
+
+```
+
+### 安装nginx和配置常用方法参考：
+```
+sudo apt install -y nginx
+sudo systemctl enable --now nginx
+新建位置文件：/etc/nginx/conf.d/code-server.trycatch.xyz.conf:
 
 ```
 

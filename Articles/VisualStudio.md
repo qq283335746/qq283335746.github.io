@@ -2,15 +2,15 @@
 
 [Visual Studio 文档](https://docs.microsoft.com/zh-cn/visualstudio/windows/?view=vs-2019)
 
+[Visual Studio Code Getting Started](https://code.visualstudio.com/docs)
+
+[Microsoft Visual Studio Code 中文手册](https://www.cntofu.com/book/98/README.md)
+
 [适用于 Linux 的 Windows 子系统文档](https://docs.microsoft.com/zh-cn/windows/wsl/)
 
 [Visual Studio Live Share 介绍 -官方](https://docs.microsoft.com/zh-cn/visualstudio/liveshare/)
 
-[Remote Development using SSH -官方](https://code.visualstudio.com/docs/remote/ssh)
-
-[Remote development over SSH -官方](https://code.visualstudio.com/docs/remote/ssh-tutorial)
-
-[Visual Studio 调试程序文档](https://docs.microsoft.com/zh-cn/visualstudio/debugger/?view=vs-2019)
+[调试器文档 - Visual Studio (Windows)](https://learn.microsoft.com/zh-cn/visualstudio/debugger/?view=vs-2022)
 
 [使用visual studio code - .NET 基础知识](https://docs.microsoft.com/zh-cn/dotnet/core/tutorials/library-with-visual-studio-code)
 
@@ -26,14 +26,13 @@
 
 [VSCode使用Remote-SSH免密码登陆远程服务器](https://www.cnblogs.com/pzzrudlf/articles/12287162.html)
 
-### vscode + extension for Visual Studio Code
+### vscode + extension 常用扩展插件
 ```
 远程协同工作插件：Visual Studio Live Share
 
 C# --Microsoft
 C# XML Documentation Comments  --Keisuke Kato
-SQLTools --Matheus Teixeira + SQLTools Microsoft SQL Server/Azure
-SQl Server Client(mssql)  --Weijan Chen 
+Database Client --Weijan Chen --包含sqlserver、mysql redis等管理
 ```
 
 ### vscode快捷键：
@@ -107,6 +106,7 @@ curl -fOL https://github.com/coder/code-server/releases/download/v4.10.0/code-se
 sudo dpkg -i code-server_4.10.0_amd64.deb
 sudo systemctl enable --now code-server@yibi
 sudo systemctl start code-server@yibi
+sudo systemctl status code-server@yibi
 
 --code-server后台运行：
 sudo systemctl restart code-server@$USER
