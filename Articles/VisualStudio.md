@@ -2,15 +2,15 @@
 
 [Visual Studio 文档](https://docs.microsoft.com/zh-cn/visualstudio/windows/?view=vs-2019)
 
+[Visual Studio Code Getting Started](https://code.visualstudio.com/docs)
+
+[Microsoft Visual Studio Code 中文手册](https://www.cntofu.com/book/98/README.md)
+
 [适用于 Linux 的 Windows 子系统文档](https://docs.microsoft.com/zh-cn/windows/wsl/)
 
 [Visual Studio Live Share 介绍 -官方](https://docs.microsoft.com/zh-cn/visualstudio/liveshare/)
 
-[Remote Development using SSH -官方](https://code.visualstudio.com/docs/remote/ssh)
-
-[Remote development over SSH -官方](https://code.visualstudio.com/docs/remote/ssh-tutorial)
-
-[Visual Studio 调试程序文档](https://docs.microsoft.com/zh-cn/visualstudio/debugger/?view=vs-2019)
+[调试器文档 - Visual Studio (Windows)](https://learn.microsoft.com/zh-cn/visualstudio/debugger/?view=vs-2022)
 
 [使用visual studio code - .NET 基础知识](https://docs.microsoft.com/zh-cn/dotnet/core/tutorials/library-with-visual-studio-code)
 
@@ -26,14 +26,13 @@
 
 [VSCode使用Remote-SSH免密码登陆远程服务器](https://www.cnblogs.com/pzzrudlf/articles/12287162.html)
 
-### vscode + extension for Visual Studio Code
+### vscode + extension 常用扩展插件
 ```
 远程协同工作插件：Visual Studio Live Share
 
 C# --Microsoft
 C# XML Documentation Comments  --Keisuke Kato
-SQLTools --Matheus Teixeira + SQLTools Microsoft SQL Server/Azure
-SQl Server Client(mssql)  --Weijan Chen 
+Database Client --Weijan Chen --包含sqlserver、mysql redis等管理
 ```
 
 ### vscode快捷键：
@@ -46,6 +45,8 @@ visual studio 转到定义后返回：ctrl+-
 
 调出命令面板：Ctrl+Shift+P
 
+ctrl+k+8 --#region #endregion全部折叠
+ctrl+k+9 --#region #endregion全部展开
 ctrl+shift+[  --折叠
 ctrl+k ctrl+0  --折叠全部
 ctrl+shift+]  --展开
@@ -58,8 +59,12 @@ ctrl+p  --查找文件
 ```
 
 ### vscode remote:
-
 ```
+vscode+WSL:
+1、点击左下角><图标
+2、New WSL Window
+3、即可进入
+
 vscode Remote-SSH：
 1、点击左下角><图标
 2、Remote-SSH Connect to Host
@@ -84,6 +89,33 @@ Host 192.168.xxx.xx
   IdentityFile ~/.ssh/id_rsa_192-168-xxx-xx
 
 vscode远程-免密连接linux --end：
+
+//vscode 自带命令行开启远程开发：
+code tunnel --accept-server-license-terms
+[Developing with Remote Tunnels](https://code.visualstudio.com/docs/remote/tunnels)
+
+--install code-server
+
+
+```
+
+### code-server
+```
+[install code-server](https://coder.com/docs/code-server/latest/install#debian-ubuntu):
+curl -fOL https://github.com/coder/code-server/releases/download/v4.10.0/code-server_4.10.0_amd64.deb
+sudo dpkg -i code-server_4.10.0_amd64.deb
+sudo systemctl enable --now code-server@yibi
+sudo systemctl start code-server@yibi
+sudo systemctl status code-server@yibi
+
+--code-server后台运行：
+sudo systemctl restart code-server@$USER
+
+--code-server启动输出：
+Using config file ~/.config/code-server/config.yaml --可修改ip与端口
+HTTP server listening on http://0.0.0.0:8088/  --打开chrome等浏览器即可浏览
+Using password from ~/.config/code-server/config.yaml  --可修改连接密码
+
 ```
 
 ### vscode + c#
@@ -128,6 +160,8 @@ dotnet add src/ExSaf/ExSaf.csproj package Swashbuckle.AspNetCore -v 6.3.0
 vscode git 每次都要求输入用户名和密码:git config --global credential.helper store  重启vscode
 
 git pull "请在合并前提交或贮藏您的修改" : git config pull.rebase false
+
+vscode创建标签后不自动提交，手动：git push --tags
 ```
 
 

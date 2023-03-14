@@ -5,6 +5,8 @@
 
 [OPC通信](http://www.ad.siemens.com.cn/productportal/Prods/S7-1200_PLC_EASY_PLUS/SmartSMS/031.html)
 
+[Using Postman Interceptor](https://learning.postman.com/docs/sending-requests/capturing-request-data/interceptor/)
+
 [Postman Proxy](https://learning.getpostman.com/docs/postman/sending_api_requests/proxy/)
 
 [chrome Postman download](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop/related)
@@ -22,6 +24,13 @@
 [WinSCP-File Manager（FTP, FTPS, SCP, SFTP, WebDAV）](https://winscp.net/eng/download.php)
 
 [JSON转C#实体类](https://www.bejson.com/convert/json2csharp/)
+
+[base64转图片](https://www.toolnb.com/tools/base64ToImages.html)
+
+### Windows ISO 下载工具
+```
+heidoc Windows ISO Downloader
+```
 
 ### 安装密钥：
 ```
@@ -50,11 +59,6 @@ GitHub中README.md添加图片方式：
 ```
 
 ### 搭建自己的git源码管理：gitea
-
-git常用命令：
-更改git账号：
-git config --global user.name "Your_username" 
-git config --global user.email "Your_email"
 
 ### 虚拟机：VirthalBox
 

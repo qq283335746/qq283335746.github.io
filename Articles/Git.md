@@ -78,6 +78,9 @@ git config user.name "yourname"
 git config user.email "yourmail@email.com"
 git config user.password "yourpassword"
 
+--vscode git每次都需要输入用户名及密码的解决方法:
+git config --global credential.helper store
+
 使用 git remote set-url 命令将远程的 URL 从 SSH 更改为 HTTPS：
 git remote set-url origin https://github.com/qq283335746/qq283335746.github.io.git
 

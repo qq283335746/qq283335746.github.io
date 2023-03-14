@@ -4,7 +4,9 @@
 
 [C# 文档](https://docs.microsoft.com/zh-cn/dotnet/csharp/)
 
-[.NET 文档](https://docs.microsoft.com/zh-cn/dotnet/)
+[.NET 文档](https://learn.microsoft.com/zh-cn/dotnet/)
+
+[.NET 文档](https://learn.microsoft.com/zh-cn/dotnet/fundamentals/)
 
 [欢迎使用 .NET](https://docs.microsoft.com/zh-cn/dotnet/welcome)
 
@@ -110,8 +112,10 @@ services.AddMvc(opts=> {
 
 ### c#
 ```
+ValueTuple：返回您的特定参数
 声明一个decimal并赋值：var price = 0.00m;
-转2、8、10、16进制等字符串：Convert.ToString(c, toBase: 16)
+转2、8、10、16进制等字符串：Convert.ToString(c, toBase: 16);
+自动打开文件：Process.Start(filename);
 ```
 System.Threading.Timer和System.Timers.Timer执行异步方法：
 ```
