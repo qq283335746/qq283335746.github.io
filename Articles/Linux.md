@@ -18,6 +18,8 @@
 
 [纯干货：23个服务器常见问题处理方法](https://baijiahao.baidu.com/s?id=1665926621488582098&wfr=spider&for=pc)
 
+[linux-usb蓝牙驱动](https://github.com/radxa/rtkbt.git)
+
 开发人员常用命令：
 ```
 
