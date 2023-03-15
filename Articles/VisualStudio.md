@@ -26,13 +26,15 @@
 
 [VSCode使用Remote-SSH免密码登陆远程服务器](https://www.cnblogs.com/pzzrudlf/articles/12287162.html)
 
-### vscode + extension 常用扩展插件
+### vscode + extension 扩展插件
 ```
 远程协同工作插件：Visual Studio Live Share
 
 C# --Microsoft
 C# XML Documentation Comments  --Keisuke Kato
 Database Client --Weijan Chen --包含sqlserver、mysql redis等管理
+
+画图插件：draw关键字
 ```
 
 ### vscode快捷键：
