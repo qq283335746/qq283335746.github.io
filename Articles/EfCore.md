@@ -37,6 +37,23 @@ LinqKit.Core包使用PredicateBuilder多条件拼接查询
 
 ```
 
+### EF Core 事务
+```
+//https://learn.microsoft.com/zh-cn/dotnet/framework/data/transactions/implementing-an-implicit-transaction-using-transaction-scope
+//System.Transactions.IsolationLevel:https://learn.microsoft.com/zh-cn/dotnet/api/system.transactions.isolationlevel?view=net-8.0
+//System.Transactions.TransactionScopeOption:https://learn.microsoft.com/zh-cn/dotnet/api/system.transactions.transactionscopeoption?view=net-8.0
+using (var scope = new TransactionScope(TransactionScopeOption.Required,
+    new TransactionOptions { IsolationLevel = System.Transactions.IsolationLevel.ReadUncommitted })
+)
+{
+    scope.Complete();
+}
+
+System.Transactions 的限制:
+1、EF Core 依赖数据库提供程序以实现对 System.Transactions 的支持。 如果提供程序未实现对 System.Transactions 的支持，则可能会完全忽略对这些 API 的调用。 SqlClient 支持它。
+2、System.Transactions 中的分布式事务支持已添加到仅适用于 Windows 的 .NET 7.0。 尝试在较旧的 .NET 版本或非 Windows 平台上使用分布式事务将失败。
+```
+
 ### 代码片段备忘：
 
 ```
