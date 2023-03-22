@@ -1,5 +1,27 @@
 # LINQ多表、复杂查询
 
+### 生成sql一样：
+```
+sql:
+select BSCode [Key],BSName [Value] from Table1 
+where BSCode in (select distinct BSCode from Table2 where RoleCode='6010')
+
+linq:
+var resDatas = await (from bs in _context.Table1.AsNoTracking()
+    where (from su in _context.Table2.AsNoTracking()
+            where su.RoleCode == roleCode
+            select su.Bscode).Distinct().Contains(bs.Bscode)
+    select new KeyValueModel { Key = bs.Bscode, Value = bs.Bsname }
+).ToListAsync(cancelToken);
+
+var resDatas = await _context.Table1.AsNoTracking().Where(m =>
+    _context.Table2.AsNoTracking()
+    .Where(a => a.RoleCode == roleCode).Select(a => a.Bscode).Distinct()
+    .Contains(m.Bscode)
+).Select(m => new KeyValueModel { Key = m.Bscode, Value = m.Bsname }).ToListAsync(cancelToken);
+
+```
+
 一个相等查询备忘
 ```
 var ppsMatches = await (
@@ -81,3 +103,4 @@ var resModel = await (
 ).Distinct().ToListAsync();
 
 ```
+

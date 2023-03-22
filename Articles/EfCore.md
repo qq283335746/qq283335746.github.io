@@ -54,10 +54,24 @@ System.Transactions 的限制:
 2、System.Transactions 中的分布式事务支持已添加到仅适用于 Windows 的 .NET 7.0。 尝试在较旧的 .NET 版本或非 Windows 平台上使用分布式事务将失败。
 ```
 
-### 代码片段备忘：
+### EF Core 与 SqlClient
+```
+SqlClientFactory
 
 ```
 
+### 代码片段备忘：
+
+```
+-----------------------------------------------------------------------------------
+//创建事务
+using(var conn = _sqlHelper.CreateConnection(_sqlHelper.ConnectionString))
+{
+    using var transaction = conn.BeginTransaction();
+}
+
+SqlHelper.cs:
+public IDbConnection CreateConnection(string connectionString) => new SqlConnection(connectionString);
 -----------------------------------------------------------------------------------
 List<string>属性映射：
 public List<string> RelatedSo { get; set; }
