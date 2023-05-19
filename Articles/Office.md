@@ -15,6 +15,7 @@ Kapral.FastExcel： --reading and writing
 Microsoft.Office.Interop.Excel 
 
 [欢迎使用 Open XML SDK 2.5 for Office --官方](https://docs.microsoft.com/zh-cn/office/open-xml/open-xml-sdk)
+[Top 20 NuGet Excel Packages](https://nugetmusthaves.com/Category/Excel?page=2)
 
 对DocumentFormat.OpenXml封装可参考：
 EZExcel: https://github.com/mink0613/EZExcel/blob/master/EZExcel/EZExcel.cs
