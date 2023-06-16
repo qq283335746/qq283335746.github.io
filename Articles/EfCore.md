@@ -39,6 +39,11 @@ LinqKit.Core包使用PredicateBuilder多条件拼接查询
 
 ### EF Core 事务
 ```
+//启用事务
+using var transaction = await _context.Database.BeginTransactionAsync();
+...
+await transaction.CommitAsync(cancelToken);
+
 //https://learn.microsoft.com/zh-cn/dotnet/framework/data/transactions/implementing-an-implicit-transaction-using-transaction-scope
 //System.Transactions.IsolationLevel:https://learn.microsoft.com/zh-cn/dotnet/api/system.transactions.isolationlevel?view=net-8.0
 //System.Transactions.TransactionScopeOption:https://learn.microsoft.com/zh-cn/dotnet/api/system.transactions.transactionscopeoption?view=net-8.0
@@ -63,15 +68,19 @@ SqlClientFactory
 ### 代码片段备忘：
 
 ```
+//启用跟踪与不跟踪
+builder.UseSqlServer(databaseOptions.Value.ConnectionString)
+//.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
+;
 -----------------------------------------------------------------------------------
-//创建事务
+//SqlHelper.cs启用事务
 using(var conn = _sqlHelper.CreateConnection(_sqlHelper.ConnectionString))
 {
     using var transaction = conn.BeginTransaction();
 }
-
-SqlHelper.cs:
 public IDbConnection CreateConnection(string connectionString) => new SqlConnection(connectionString);
+
+
 -----------------------------------------------------------------------------------
 List<string>属性映射：
 public List<string> RelatedSo { get; set; }

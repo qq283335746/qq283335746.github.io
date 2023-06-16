@@ -63,3 +63,4 @@ GitHub中README.md添加图片方式：
 ### 虚拟机：VirthalBox
 
 Rufus：轻松创建USB启动盘
+balenaEtcher: 轻松创建USB启动盘、克隆磁盘

@@ -23,4 +23,5 @@ EZExcel: https://github.com/mink0613/EZExcel/blob/master/EZExcel/EZExcel.cs
 对NPOI封装可参考：
 ExcelR: https://github.com/code-farmz/ExcelR
 
-
+SpreadsheetLight:https://spreadsheetlight.com/tutorial/
+ExcelDna.Interop:The ID prefix of this package has been reserved for one of the owners of this package by NuGet.org. by: excel-dna
