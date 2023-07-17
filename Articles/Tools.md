@@ -60,7 +60,14 @@ GitHub中README.md添加图片方式：
 
 ### 搭建自己的git源码管理：gitea
 
-### 虚拟机：VirthalBox
+### 虚拟机：VirthalBox、 GNOME Boxes
 
 Rufus：轻松创建USB启动盘
-balenaEtcher: 轻松创建USB启动盘、克隆磁盘
+balenaEtcher: 轻松创建USB启动盘、克隆磁盘  https://etcher.balena.io/#download-etcher
+InfraRecorder: CD刻录工具  https://www.fosshub.com/InfraRecorder.html
+
+多系统并存参考：
+https://www.ithome.com/0/413/082.htm
+
+### 录屏工具
+SimpleScreenRecorder
