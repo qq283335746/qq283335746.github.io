@@ -46,6 +46,8 @@
 
 [High Performance TCP Client Server using TCPListener and TCPClient in .NET Standard](https://www.codeproject.com/Articles/5270779/High-Performance-TCP-Client-Server-using-TCPListen)
 
+[通过 .NET CLI 生成自签名证书](https://learn.microsoft.com/zh-cn/dotnet/core/additional-tools/self-signed-certificates-guide?cid=kerryherger)
+
 [.NET CLI](https://docs.microsoft.com/zh-cn/dotnet/core/tools/)
 ```
 dotnet new sln --name Yibi
